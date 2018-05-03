@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  &:before, &:after {
+      box-sizing: border-box;
+    }
+}
+
+//Стилизация input-placeholder 
+*::placeholder {
+  color: #666;
+  opacity: 1;
+}
+//=============//
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+  color: #666;
+}
+html, body {
+  line-height: 1.4;
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  min-width: 375px;
+  position: relative;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+
+
+
+/* ===== Initializr Styles ==================================================
+ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+ ========================================================================== */
+body {
+  color: #8A858B;
+}
+.icon {
+  font-size: 1.5rem;
+}
+
+// убираем стрелки в input при type=number
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

@@ -1,0 +1,16 @@
+.border-radius {
+	border-radius: 0;
+	&.border-right {
+		border-right: none;
+	}
+	&.change-color {
+		color: #fff;
+		opacity: .9;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.input-group-addon {
+	background: #fff;
+}
