@@ -20,22 +20,22 @@ var gulp           = require('gulp'),
 // Пользовательские скрипты проекта
 gulp.task('config-js', function() {
 	return gulp.src([
-		'app/js/config.js'
+		'web/js/config.js'
 	])
-	.pipe(gulp.dest('app/js'));
+	.pipe(gulp.dest('web/js'));
 });
 
 gulp.task('js', ['config-js'], function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js',
-		'app/libs/bootstrap/bootstrap.js',
+		'web/libs/jquery/dist/jquery.min.js',
+		'web/libs/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js',
+		'web/libs/bootstrap/bootstrap.js',
 	])
 	.pipe(sourcemaps.init()) //Инициализируем sourcemap
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(sourcemaps.write()) //Пропишем карты
-	.pipe(gulp.dest('app/js'))
+	.pipe(gulp.dest('web/js'))
 	.pipe(browserSync.reload({stream: true}));
 });
 
@@ -51,55 +51,66 @@ gulp.task('browser-sync', function() {
 
 gulp.task('scss', function() {
 	return gulp.src([
-		'app/scss/**/*.scss'
+		'web/scss/**/*.scss'
   ])
 	.pipe(scss())
 	.pipe(autoprefixer(['last 15 versions'], { cascade: true }))
 	//.pipe(cleanCSS()) // Опционально, закомментировать при отладке
-	.pipe(gulp.dest('app/css'))
+	.pipe(gulp.dest('web/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
 
 //наблюдение за изменениями в файлах
 gulp.task('watch', ['scss', 'js', 'browser-sync'], function() {
-	gulp.watch('app/scss/**/*.scss', ['scss']);
+	gulp.watch('web/scss/**/*.scss', ['scss']);
 	gulp.watch(['libs/**/*.js', 'app/js/config.js'], ['js']);
-	gulp.watch('app/blocks/**/*.php', browserSync.reload);
-	gulp.watch('app/*.php', browserSync.reload);
+	gulp.watch('web/blocks/**/*.php', browserSync.reload);
+	gulp.watch('web/*.php', browserSync.reload);
 });
 
 gulp.task('imagemin', function() {
-	return gulp.src('app/img/**/*')
+	return gulp.src('web/img/**/*')
 	.pipe(cache(imagemin()))
-	.pipe(gulp.dest('dist/img')); 
+	.pipe(gulp.dest('dist/web/img'));
 });
 
 gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function() {
 
 	var buildFiles = gulp.src([
-				'app/*.php',
-				'app/.htaccess',
-				'app/robots.txt'
-			]).pipe(gulp.dest('dist'));
+				'web/*.php',
+				'web/.htaccess',
+				'web/robots.txt',
+				'web/composer.json',
+				'web/composer.lock',
+			]).pipe(gulp.dest('dist/web'));
+
+  var buildFiles1 = gulp.src([
+    'composer.json',
+    'composer.lock',
+  ]).pipe(gulp.dest('dist/'));
 
 
-    var buildBlocks = gulp.src([
-		      'app/blocks/**/*'
-		    ]).pipe(gulp.dest('dist/blocks'));
+	var buildBlocks = gulp.src([
+				'app/**/*'
+			]).pipe(gulp.dest('dist/app'));
+
+  var buildBlocks = gulp.src([
+    'vendor/**/*'
+  ]).pipe(gulp.dest('dist/vendor'));
 
 	var buildCss = gulp.src([
-				'app/css/main.css',
-				'app/css/libs.css',
-			]).pipe(gulp.dest('dist/css'));
+				'web/css/main.css',
+				'web/css/libs.css',
+			]).pipe(gulp.dest('dist/web/css'));
 
 	var buildJs = gulp.src([
-				'app/js/scripts.min.js',
-				'app/js/config.js'
-			]).pipe(gulp.dest('dist/js'));
+				'web/js/scripts.min.js',
+				'web/js/config.js'
+			]).pipe(gulp.dest('dist/web/js'));
 
 	var buildFonts = gulp.src([
-				'app/fonts/**/*'
-			]).pipe(gulp.dest('dist/fonts'));
+				'web/fonts/**/*'
+			]).pipe(gulp.dest('dist/web/fonts'));
 
 });
 
