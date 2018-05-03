@@ -11,23 +11,19 @@ ini_set('display_startup_errors', 1);
 <head>
 
 	<meta charset="utf-8">
-	<title>Intervale</title>
+	<title>Белгосстрах</title>
 
-  <?php include("blocks/meta.php"); ?>
+  <?php include("blocks/meta-link.php"); ?>
 
 </head>
 
 <body>
 
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 form-intervale">
-        <?php include("blocks/pages/home.php"); ?>
-      </div>
-    </div>
+
   </div>
   
-  <?php include("blocks/links-scripts.php"); ?>
+  <?php include("blocks/scripts.php"); ?>
 
 </body>
 </html>

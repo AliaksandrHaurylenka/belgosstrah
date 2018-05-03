@@ -29,7 +29,7 @@ gulp.task('js', ['config-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js',
-    	'app/libs/bootstrap/bootstrap.js',
+		'app/libs/bootstrap/bootstrap.js',
 	])
 	.pipe(sourcemaps.init()) //Инициализируем sourcemap
 	.pipe(concat('scripts.min.js'))
