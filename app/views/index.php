@@ -3,27 +3,20 @@
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <? foreach($slides as $li): ?>
+      <li data-target="#myCarousel" data-slide-to="<?= $li['id']; ?>" class="<?= $li['class']; ?>"></li>
+    <? endforeach; ?>
   </ol>
 
-    <div class="carousel-inner" role="listbox">
-
-      <div class="carousel-item active">
-        <img class="first-slide" src="img/main/1506864935_23.jpg" alt="First slide">
+  <div class="carousel-inner" role="listbox">
+    <? foreach($slides as $slide): ?>
+      <div class="carousel-item <?= $slide['class']; ?>">
+        <img src="img/main/<?= $slide['image']; ?>" alt="<?= $slide['alt']; ?>">
       </div>
+    <? endforeach; ?>
+  </div>
 
-      <div class="carousel-item">
-        <img class="second-slide" src="img/main/Neustojka-po-osago.jpg" alt="Second slide">
-      </div>
-
-      <div class="carousel-item">
-        <img class="third-slide" src="img/main/153d2b213a1b613be120e791.jpg" alt="Third slide">
-      </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>

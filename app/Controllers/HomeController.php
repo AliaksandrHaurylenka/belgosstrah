@@ -9,19 +9,23 @@
 namespace App\Controllers;
 
 
+use App\Models\Database;
 use League\Plates\Engine;
 
 class HomeController {
 
-  private $engine;
+  private $views;
+  private $database;
 
-  function __construct(Engine $engine)
+  function __construct(Engine $views, Database $database)
   {
-    $this->engine = $engine;
+    $this->views = $views;
+    $this->database=$database;
   }
 
   function index()
   {
-    echo $this->engine->render('index');
+    $slides = $this->database->all('slide');
+    echo $this->views->render('index', ['slides' => $slides]);
   }
 } 
