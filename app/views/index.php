@@ -5,7 +5,7 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <? foreach ($slides as $li): ?>
-      <li data-target="#myCarousel" data-slide-to="<?= $li['id']; ?>" class="<?= $li['class']; ?>"></li>
+      <li data-target="#myCarousel" data-slide-to="<?= $li['id']-1; ?>" class="<?= $li['class']; ?>"></li>
     <? endforeach; ?>
   </ol>
 
