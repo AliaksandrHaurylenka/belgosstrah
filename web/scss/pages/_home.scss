@@ -1,17 +1,3 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
@@ -34,6 +20,8 @@ body {
   min-width: 100%;
   height: 32rem;
 }
+//==================================
+
 
 .well {
   h3 {
@@ -47,18 +35,13 @@ body {
 }
 
   //Виды страхования
-  .card {
-    img {
-      //max-width: 100%;
-      width: 100%;
-      //height: 40%;
-    }
-  }
 
 
 
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
 
   @media (min-width: 40em) {
     /* Bump up size of carousel content */
