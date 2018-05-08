@@ -28,8 +28,7 @@ gulp.task('config-js', function () {
 gulp.task('js', ['config-js'], function () {
     return gulp.src([
         'web/libs/jquery/dist/jquery.min.js',
-        'web/libs/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js',
-        'web/libs/bootstrap/bootstrap.js',
+        'web/libs/bootstrap/bootstrap.js'
     ])
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(concat('scripts.min.js'))
@@ -79,34 +78,31 @@ gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function () {
     var buildFiles = gulp.src([
         'web/*.php',
         'web/.htaccess',
-        'web/robots.txt',
-        'web/composer.json',
-        'web/composer.lock',
+        'web/robots.txt'
     ]).pipe(gulp.dest('dist/web'));
-
-    var buildFiles1 = gulp.src([
-        'composer.json',
-        'composer.lock',
-    ]).pipe(gulp.dest('dist/'));
 
 
     var buildApp = gulp.src([
         'app/**/*'
     ]).pipe(gulp.dest('dist/app'));
 
+
     var buildVendor = gulp.src([
         'vendor/**/*'
     ]).pipe(gulp.dest('dist/vendor'));
+
 
     var buildCss = gulp.src([
         'web/css/main.css',
         'web/css/libs.css',
     ]).pipe(gulp.dest('dist/web/css'));
 
+
     var buildJs = gulp.src([
         'web/js/scripts.min.js',
         'web/js/config.js'
     ]).pipe(gulp.dest('dist/web/js'));
+
 
     var buildFonts = gulp.src([
         'web/fonts/**/*'
@@ -127,8 +123,7 @@ gulp.task('deploy', function () {
 
 
     var globs = [
-        'dist/**',
-        'dist/.htaccess'
+        'dist/**'
     ];
     return gulp.src(globs, {buffer: false})
         .pipe(conn.dest('public_html'));
