@@ -16,8 +16,24 @@ $menu = new \App\Models\Database($sql, $pdo);
       <ul class="navbar-nav mr-auto">
         <?php $result = $menu->all('menu'); ?>
         <? foreach ($result as $li): ?>
-          <li class="nav-item">
-            <a class="nav-link" href="<?= $li['link']; ?>"><?= $li['name']; ?></a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?= $li['link']; ?>" role="button"
+               aria-haspopup="true" aria-expanded="false"><?= $li['name']; ?></a>
+            <div class="dropdown-menu">
+              <?php
+              if ($li['name_en'] == "stravita") {
+                $drop = $menu->allWhere('menu-dropdown', 'stravita');
+                foreach ($drop as $item) {
+                  echo '<a class="dropdown-item" href="#">' . $item['name'] . '</a>';
+                }
+              } elseif ($li['name_en'] == 'belrosstrah') {
+                $drop = $menu->allWhere('menu-dropdown', 'belrosstrah');
+                foreach ($drop as $item) {
+                  echo '<a class="dropdown-item" href="#">' . $item['name'] . '</a>';
+                }
+              }
+              ?>
+            </div>
           </li>
         <? endforeach; ?>
       </ul>
