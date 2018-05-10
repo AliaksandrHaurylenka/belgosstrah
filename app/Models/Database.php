@@ -36,17 +36,34 @@ class Database
     return $result;
   }
 
-  function allWhere($table, $attachment)
+  function allWhere($table, $col, $attachment)
   {
     $select = $this->queryFactory->newSelect();
     $select->cols(['*'])
         ->from($table)
-        ->where('attachment = :attachment')
-        ->bindValue('attachment', $attachment);
+        ->where("$col = :$attachment")
+//        ->where('attachment = :attachment')
+        ->bindValue("$attachment", $attachment);
+//        ->bindValue('attachment', $attachment);
 
     $sth = $this->pdo->prepare($select->getStatement());
     $sth->execute($select->getBindValues());
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+    return $result;
+  }
+
+  function getOne($table, $id)
+  {
+    $select = $this->queryFactory->newSelect();
+    $select->cols(['*'])
+        ->from($table)
+        ->where('id = :id')
+        ->bindValue('attachment', $id);
+
+    $sth = $this->pdo->prepare($select->getStatement());
+    $sth->execute($select->getBindValues());
+    $result = $sth->fetch(PDO::FETCH_ASSOC);
 
     return $result;
   }

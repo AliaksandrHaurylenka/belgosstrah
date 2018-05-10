@@ -23,13 +23,13 @@ $menu = new \App\Models\Database($sql, $pdo);
             <div class="dropdown-menu">
               <?php
               if ($li['name_en'] == "stravita") {
-                $drop = $menu->allWhere('menu-dropdown', 'stravita');
+                $drop = $menu->allWhere('menu-dropdown', 'attachment', 'stravita');
                 foreach ($drop as $item) {
                   echo '<a class="dropdown-item" href="' . $item['link']. '">' . $item['name'] . '</a>';
                   echo "<div class=\"dropdown-divider\"></div>";
                 }
               } elseif ($li['name_en'] == 'belrosstrah') {
-                $drop = $menu->allWhere('menu-dropdown', 'belrosstrah');
+                $drop = $menu->allWhere('menu-dropdown', 'attachment', 'belrosstrah');
                 foreach ($drop as $item) {
                   echo '<a class="dropdown-item" href="' . $item['link']. '">' . $item['name'] . '</a>';
                   echo "<div class=\"dropdown-divider\"></div>";
