@@ -1,5 +1,5 @@
 <?php $block = new \League\Plates\Engine('../app/views/blocks'); ?>
-<?php $this->layout('layout', ['title' => 'Main']) ?>
+<?php $this->layout('layout', ['title' => 'Страхование online']) ?>
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -30,5 +30,16 @@
 
 
 <div class="container">
+  <h1>Страхование online</h1>
+  <p class="lead">
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias asperiores aut, debitis doloremque eligendi est
+    eveniet iure iusto, magnam nobis nostrum perferendis perspiciatis possimus, quibusdam tenetur velit veritatis
+    voluptate.
+  </p>
+  <p class="lead">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam cum distinctio dolor eveniet fugit, harum
+    illum labore minus molestias nesciunt nobis nulla omnis quidem quos suscipit tenetur voluptates.
+  </p>
   <?= $block->render('views-insurance'); ?>
 </div><!-- /.container -->

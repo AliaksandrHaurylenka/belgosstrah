@@ -1,59 +1,76 @@
-<h1>Страхование online</h1>
-<p class="lead">
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias asperiores aut, debitis doloremque eligendi est eveniet iure iusto, magnam nobis nostrum perferendis perspiciatis possimus, quibusdam tenetur velit veritatis voluptate.
-</p>
-<p class="lead">
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam cum distinctio dolor eveniet fugit, harum illum labore minus molestias nesciunt nobis nulla omnis quidem quos suscipit tenetur voluptates.
-</p>
-
 <div class="row">
   <div class="col-md-6">
     <img src="img/main/stravita.jpg" class="img-fluid mb-2" alt="Responsive image">
     <div class="well">
       <h3 class="pb-2">Виды страховых услуг</h3>
     </div>
+
+    <!--Страхование детей-->
+    <p class="h3">Страхование детей</p>
     <div class="card-group mb-3">
       <div class="card">
         <img class="card-img-top img-fluid" src="img/services/banner1.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h4 class="card-title">Детское страхование</h4>
+          <p class="card-text">Страховая программа «Детское страхование» - программа страхования для детей...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top img-fluid" src="img/services/banner2.jpg" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
     </div>
+
+
+    <!--Страхование жизни-->
+    <p class="h3">Страхование жизни</p>
     <div class="card-group mb-3">
       <div class="card">
         <img class="card-img-top img-fluid" src="img/services/banner1.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h4 class="card-title">Универсальное страхование жизни</h4>
+          <p class="card-text">Страховая программа «Универсальное страхование жизни» предназначена для планового
+            накопления...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
       <div class="card">
         <img class="card-img-top img-fluid" src="img/services/banner2.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h4 class="card-title">Защищенный кредит</h4>
+          <p class="card-text">Страховая программа «Защищенный кредит» - это один из вариантов целевого страхования
+            жизни... </p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Пенисионное страхование-->
+    <p class="h3">Пенсионные программы</p>
+    <div class="card-group mb-3">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="img/services/banner1.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Программа "Пенсия+"</h4>
+          <p class="card-text">Программа «Пенсия+» дает возможность создать свой личный пенсионный счет...</p>
+        </div>
+        <div class="card-footer">
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="img/services/banner2.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Программа "Пенсия"</h4>
+          <p class="card-text">Пенсионная программа - это финансовое решение, которое обеспечивает тот уровень
+            жизни...</p>
+        </div>
+        <div class="card-footer">
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
     </div>
@@ -64,47 +81,56 @@
     <div class="well">
       <h3 class="pb-2">Виды страховых услуг</h3>
     </div>
+
+
+    <!--Автокаско-->
+    <p class="h3" style="visibility: hidden;">Автокаско</p>
     <div class="card-group mb-3">
+
       <div class="card">
         <img class="card-img-top img-fluid" src="img/services/banner1.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h4 class="card-title">АВТОКАСКО</h4>
+          <p class="card-text">Страхование транспортного средства в страховой компании «Белросстрах» по АВТОКАСКО...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
+
       <div class="card">
         <img class="card-img-top img-fluid" src="img/services/banner2.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h4 class="card-title">Имущество</h4>
+          <p class="card-text">Любое ваше имущество может быть застраховано в страховой компании «Белросстрах»...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
+
     </div>
+
     <div class="card-group mb-3">
       <div class="card">
         <img class="card-img-top img-fluid" src="img/services/banner1.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h4 class="card-title">Туризм</h4>
+          <p class="card-text">Страхование от несчастных случаев и болезней на время поездки за границу в страховой компании «Белросстрах»...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
+
       <div class="card">
         <img class="card-img-top img-fluid" src="img/services/banner2.jpg" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <h4 class="card-title">Здоровье</h4>
+          <p class="card-text">Жизнь полна случайностей. Многие происходят тогда, когда их не ждешь...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
     </div>

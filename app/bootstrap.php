@@ -3,54 +3,60 @@
 use Aura\SqlQuery\QueryFactory;
 use DI\ContainerBuilder;
 
-$containerBuilder = new ContainerBuilder();
-$containerBuilder->addDefinitions([
-  QueryFactory::class => function(){
-    return new QueryFactory('mysql');
-  },
+$containerBuilder=new ContainerBuilder();
+$containerBuilder->addDefinitions(
+[
+    QueryFactory::class=>function () {
+      return new QueryFactory('mysql');
+    },
 
-  PDO::class => function(){
-    return new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
-  },
+    PDO::class=>function () {
+      return new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
+    },
 
-  \League\Plates\Engine::class => function(){
-    return new \League\Plates\Engine('../app/views');
-  }
+  /* PDO::class=>function () {
+     return new PDO('mysql:host=localhost; dbname=u473969940_test', 'u473969940_test', 'POAtI9DVf6aT');
+   },*/
+
+    \League\Plates\Engine::class=>function () {
+      return new \League\Plates\Engine('../app/views');
+    }
 
 ]);
 
-$container = $containerBuilder->build();
+$container=$containerBuilder->build();
 
 
-$dispatcher = FastRoute\simpleDispatcher(function(FastRoute\RouteCollector $r) {
+$dispatcher=FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
   $r->get('/', ['App\Controllers\HomeController', 'index']);
+  $r->get('/contact', ['App\Controllers\HomeController', 'contact']);
 
 });
 
 // Fetch method and URI from somewhere
-$httpMethod = $_SERVER['REQUEST_METHOD'];
-$uri = $_SERVER['REQUEST_URI'];
+$httpMethod=$_SERVER['REQUEST_METHOD'];
+$uri=$_SERVER['REQUEST_URI'];
 
 // Strip query string (?foo=bar) and decode URI
-if (false !== $pos = strpos($uri, '?')) {
-  $uri = substr($uri, 0, $pos);
+if(false!==$pos=strpos($uri, '?')){
+  $uri=substr($uri, 0, $pos);
 }
-$uri = rawurldecode($uri);
+$uri=rawurldecode($uri);
 
-$routeInfo = $dispatcher->dispatch($httpMethod, $uri);
-switch ($routeInfo[0]) {
+$routeInfo=$dispatcher->dispatch($httpMethod, $uri);
+switch($routeInfo[0]){
   case FastRoute\Dispatcher::NOT_FOUND:
     //dd("404 Not Found");
     include "404.php";
     break;
   case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
-    $allowedMethods = $routeInfo[1];
+    $allowedMethods=$routeInfo[1];
     var_dump("405 Method Not Allowed");
     //dd($_SERVER);
     break;
   case FastRoute\Dispatcher::FOUND:
-    $handler = $routeInfo[1];
-    $vars = $routeInfo[2];
+    $handler=$routeInfo[1];
+    $vars=$routeInfo[2];
 
     //dd($handler);
     //call_user_func($handler);

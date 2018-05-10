@@ -10,27 +10,44 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Дамп структуры базы данных insurance
-CREATE DATABASE IF NOT EXISTS `insurance` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `insurance`;
-
-
 -- Дамп структуры для таблица insurance.menu
 CREATE TABLE IF NOT EXISTS `menu` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `link` varchar(50) NOT NULL,
   `attachment` varchar(50) NOT NULL,
+  `name_en` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы insurance.menu: ~0 rows (приблизительно)
+-- Дамп данных таблицы insurance.menu: ~2 rows (приблизительно)
 /*!40000 ALTER TABLE `menu` DISABLE KEYS */;
-INSERT INTO `menu` (`id`, `name`, `link`, `attachment`) VALUES
-	(1, 'Home', '/', 'main'),
-	(2, 'Link1', '/link1', 'main'),
-	(3, 'Link2', '/linl2', 'main');
+INSERT INTO `menu` (`id`, `name`, `link`, `attachment`, `name_en`) VALUES
+	(2, 'Стравита', '/link1', 'main', 'stravita'),
+	(3, 'Белросстрах', '/linl2', 'main', 'belrosstrah');
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
+
+
+-- Дамп структуры для таблица insurance.menu-dropdown
+CREATE TABLE IF NOT EXISTS `menu-dropdown` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `link` varchar(50) NOT NULL,
+  `attachment` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+
+-- Дамп данных таблицы insurance.menu-dropdown: ~4 rows (приблизительно)
+/*!40000 ALTER TABLE `menu-dropdown` DISABLE KEYS */;
+INSERT INTO `menu-dropdown` (`id`, `name`, `link`, `attachment`) VALUES
+	(1, 'Страхование детей', '/link1', 'stravita'),
+	(2, 'Страхование жизни', '/link2', 'stravita'),
+	(3, 'АВТОКАСКО', '/link3', 'belrosstrah'),
+	(4, 'Имущество', '/link4', 'belrosstrah'),
+	(5, 'Пенсионные программы', '/link5', 'stravita'),
+	(6, 'Туризм', '/link6', 'belrosstrah'),
+	(7, 'Здоровье', '/link6', 'belrosstrah');
+/*!40000 ALTER TABLE `menu-dropdown` ENABLE KEYS */;
 
 
 -- Дамп структуры для таблица insurance.slide

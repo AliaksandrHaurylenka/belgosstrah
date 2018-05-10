@@ -28,4 +28,9 @@ class HomeController {
     $slides = $this->database->all('slide');
     echo $this->views->render('index', ['slides' => $slides]);
   }
+
+  function contact()
+  {
+    echo $this->views->render('contact');
+  }
 } 
