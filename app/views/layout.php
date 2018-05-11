@@ -1,11 +1,10 @@
 <?php $block = new \League\Plates\Engine('../app/views/blocks'); ?>
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title><?= $this->e($title) ?></title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <meta name="description" content="<?= $this->e($description) ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link href='https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -24,6 +23,7 @@
   <?= $block->render('footer'); ?>
 </div><!--wrap-->
 
+<script src="js/tether.min.js"></script>
 <script src="js/scripts.min.js"></script>
 <script src="js/config.js"></script>
 </body>

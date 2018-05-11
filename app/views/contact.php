@@ -1,6 +1,10 @@
 <?php $this->layout('layout', ['title'=>'Контакты']) ?>
 
 <div class="container">
+  <ol class="breadcrumb mt-4">
+    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+    <li class="breadcrumb-item active">Контакты</li>
+  </ol>
   <div class="well mt-3">
     <h1 class="pb-2">Контакты</h1>
   </div>

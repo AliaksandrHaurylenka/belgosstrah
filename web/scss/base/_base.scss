@@ -12,6 +12,8 @@
 }
 //=============//
 
+html { padding-right: 17px }
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: #666;
@@ -66,6 +68,8 @@ input[type=number]::-webkit-outer-spin-button {
 //=========================
 
 .well {
+  background: url(../img/hr_bg.png) repeat-x;
+  background-position: bottom left;
   h1, h3 {
     font-size: 1.5rem;
     color: #363636;

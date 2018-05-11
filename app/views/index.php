@@ -1,5 +1,10 @@
 <?php $block = new \League\Plates\Engine('../app/views/blocks'); ?>
-<?php $this->layout('layout', ['title' => 'Страхование online']) ?>
+<?php $this->layout('layout',
+    [
+        'title' => 'Страхование online',
+        'description' => 'Страхование online - это удобный способ без особых усилий застраховать себя, имущество.'
+    ])
+?>
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -30,7 +35,7 @@
 
 
 <div class="container">
-  <h1>Страхование online</h1>
+  <h1 title="<?= $this->e($title) ?>">Страхование online</h1>
   <p class="lead">
     Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias asperiores aut, debitis doloremque eligendi est
