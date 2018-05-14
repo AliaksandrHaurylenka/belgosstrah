@@ -44,9 +44,9 @@ $menu = new \App\Models\Database($sql, $pdo);
         <li class="nav-item">
           <a class="nav-link" href="/contact">Контакты</a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link" href="https://calc.stravita.by/#/" target="_blank">Калькулятор</a>
-        </li>
+        </li>-->
 
       </ul>
 
