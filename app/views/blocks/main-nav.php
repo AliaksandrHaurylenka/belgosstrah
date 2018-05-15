@@ -3,6 +3,7 @@ $sql = new \Aura\SqlQuery\QueryFactory('mysql');
 $pdo = new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
 //$pdo = new PDO('mysql:host=localhost; dbname=u473969940_test', 'u473969940_test', 'POAtI9DVf6aT');
 $menu = new \App\Models\Database($sql, $pdo);
+//dd($menu);
 ?>
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary">
   <div class="container">

@@ -1,4 +1,3 @@
-<?php $block = new \League\Plates\Engine('../app/views/blocks'); ?>
 <?php $this->layout('layout',
     [
         'title' => 'Страхование online',
@@ -46,5 +45,5 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam cum distinctio dolor eveniet fugit, harum
     illum labore minus molestias nesciunt nobis nulla omnis quidem quos suscipit tenetur voluptates.
   </p>
-  <?= $block->render('views-insurance'); ?>
+  <? $this->insert('blocks/views-insurance'); ?>
 </div><!-- /.container -->

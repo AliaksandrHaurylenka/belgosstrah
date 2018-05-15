@@ -1,4 +1,9 @@
-<?php $this->layout('layout', ['title'=>'Контакты']) ?>
+<?php $this->layout('layout',
+    [
+        'title' => 'Контакты',
+        'description' => 'Страхование online - это удобный способ без особых усилий застраховать себя, имущество.'
+    ])
+?>
 
 <div class="container">
   <ol class="breadcrumb mt-4">

@@ -1,4 +1,3 @@
-<?php $block = new \League\Plates\Engine('../app/views/blocks'); ?>
 <!doctype html>
 <html lang="ru">
 <head>
@@ -15,15 +14,14 @@
 
 <div class="wrap">
   <div class="content">
-    <?= $block->render('main-nav'); ?>
+    <? $this->insert('blocks/main-nav'); ?>
 
     <?= $this->section('content') ?>
   </div><!--/.content-->
 
-  <?= $block->render('footer'); ?>
+<!--  --><?// $this->insert('blocks/footer'); ?>
 </div><!--wrap-->
 
-<script src="js/tether.min.js"></script>
 <script src="js/scripts.min.js"></script>
 <script src="js/config.js"></script>
 </body>

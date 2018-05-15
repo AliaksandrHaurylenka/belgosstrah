@@ -26,11 +26,19 @@ class HomeController {
   function index()
   {
     $slides = $this->database->all('slide');
-    echo $this->views->render('index', ['slides' => $slides]);
+//    $menu = $this->database->all('menu');
+//    dd($menu);
+    echo $this->views->render('index', compact('slides'));
+//    echo $this->views->render('index', ['slides' => $slides, 'menu' => $menu]);
   }
 
   function contact()
   {
     echo $this->views->render('contact');
+  }
+
+  function life_1()
+  {
+    echo $this->views->render('life_1');
   }
 } 

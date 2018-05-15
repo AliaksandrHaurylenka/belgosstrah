@@ -1,8 +1,8 @@
 <?php
-$sql = new \Aura\SqlQuery\QueryFactory('mysql');
-$pdo = new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
+//$sql = new \Aura\SqlQuery\QueryFactory('mysql');
+//$pdo = new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
 //$pdo = new PDO('mysql:host=localhost; dbname=u473969940_test', 'u473969940_test', 'POAtI9DVf6aT');
-$menu = new \App\Models\Database($sql, $pdo);
+//$menu = new \App\Models\Database($sql, $pdo);
 ?>
 <!-- FOOTER -->
 <div class="footer pb-4">

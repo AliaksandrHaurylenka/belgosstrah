@@ -64,7 +64,7 @@
             накопления...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/life_1" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
       <div class="card">
@@ -75,7 +75,7 @@
             жизни... </p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/life_2" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
     </div>
