@@ -1,4 +1,8 @@
-<?php $this->layout('layout', ['title'=>'Страхование online', 'description'=>'Страхование online - это удобный способ без особых усилий застраховать себя, имущество.'])
+<?php $this->layout('layout',
+    [
+        'title'=>'Страхование online',
+        'description'=>'Страхование online - это удобный способ без особых усилий застраховать себя, имущество.'
+    ])
 ?>
 
 <div class="container">

@@ -19,35 +19,7 @@
           <p class="card-text">Страховая программа «Детское страхование» - программа страхования для детей...</p>
         </div>
         <div class="card-footer">
-          <!--<p><button class="btn btn-secondary" href="#" role="button" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Подробнее &raquo;</button></p>-->
-          <!--<p><a tabindex="0" class="btn btn-secondary" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Подробнее &raquo;</a></p>-->
-
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">
-            Подробнее &raquo;
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Страховая программа «Детское страхование»  - программа страхования для детей, обеспечивающая одновременно защиту ребенка и целевые сбережения (на увлекательные экскурсионные поездки, подготовку к первому классу, репетиторов для поступления в вуз).
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
+          <p><a class="btn btn-secondary" href="/children" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
     </div>

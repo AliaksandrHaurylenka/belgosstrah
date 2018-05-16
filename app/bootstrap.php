@@ -36,6 +36,7 @@ $dispatcher=FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
   $r->get('/contact', ['App\Controllers\HomeController', 'contact']);
 
   //Виды страхования
+  $r->get('/children', ['App\Controllers\HomeController', 'children']);
   $r->get('/life_1', ['App\Controllers\HomeController', 'life_1']);
   $r->get('/life_2', ['App\Controllers\HomeController', 'life_2']);
 

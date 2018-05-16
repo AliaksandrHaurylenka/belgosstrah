@@ -30,6 +30,11 @@ class HomeController {
     echo $this->views->render('index', compact('slides'));
   }
 
+  function children()
+  {
+    echo $this->views->render('children');
+  }
+
   function contact()
   {
     echo $this->views->render('contact');
@@ -38,5 +43,10 @@ class HomeController {
   function life_1()
   {
     echo $this->views->render('life_1');
+  }
+
+  function life_2()
+  {
+    echo $this->views->render('life_2');
   }
 } 
