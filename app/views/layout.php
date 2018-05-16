@@ -14,7 +14,7 @@
 
 <div class="wrap">
   <div class="content">
-<!--    --><?// $this->insert('blocks/main-nav'); ?>
+    <? $this->insert('blocks/main-nav'); ?>
 
     <?= $this->section('content') ?>
   </div><!--/.content-->

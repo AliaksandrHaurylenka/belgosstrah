@@ -6,21 +6,25 @@ use DI\ContainerBuilder;
 $containerBuilder=new ContainerBuilder();
 $containerBuilder->addDefinitions(
 [
-    QueryFactory::class=>function () {
-      return new QueryFactory('mysql');
-    },
+  QueryFactory::class=>function () {
+    $driver = config('database.driver');
+    return new QueryFactory($driver);
+  },
 
-    PDO::class=>function () {
-      return new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
-    },
+  PDO::class=>function () {
+    $driver = config('database.driver');
+    $host = config('database.host');
+    $database_name = config('database.database_name');
+    $username = config('database.username');
+    $password = config('database.password');
 
-  /* PDO::class=>function () {
-     return new PDO('mysql:host=localhost; dbname=u473969940_test', 'u473969940_test', 'POAtI9DVf6aT');
-   },*/
+    return new PDO("$driver:host=$host;dbname=$database_name", $username, $password);
+  },
 
-    \League\Plates\Engine::class=>function () {
-      return new \League\Plates\Engine('../app/views');
-    }
+  \League\Plates\Engine::class=>function () {
+    $path = config('views_path');
+    return new \League\Plates\Engine($path);
+  }
 
 ]);
 
@@ -62,8 +66,8 @@ switch($routeInfo[0]){
     $handler=$routeInfo[1];
     $vars=$routeInfo[2];
 
-//    dd($handler);
-//    dd($vars);
+    //    dd($handler);
+    //    dd($vars);
     //call_user_func($handler);
 
     $container->call($handler, $vars);

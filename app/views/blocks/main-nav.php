@@ -1,10 +1,3 @@
-<?php
-//$sql = new \Aura\SqlQuery\QueryFactory('mysql');
-//$pdo = new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
-//$pdo = new PDO('mysql:host=localhost; dbname=u473969940_test', 'u473969940_test', 'POAtI9DVf6aT');
-//$menu = new \App\Models\Database($sql, $pdo);
-//dd($menu);
-?>
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary">
   <div class="container">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -16,39 +9,34 @@
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-<!--        --><?php //$result = $menu->all('menu'); ?>
-        <? foreach ($menu as $li): ?>
-            <li><?= $li['name']; ?></li>
-          <!--<li class="nav-item dropdown">
+        <? foreach (menu() as $li): ?>
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-               aria-haspopup="true" aria-expanded="false"><?/*= $li['name']; */?></a>
+               aria-haspopup="true" aria-expanded="false"><?= $li['name']; ?></a>
             <div class="dropdown-menu">
               <?php
-/*              if ($li['name_en'] == "stravita") {
-                $drop = $menu->allWhere('menu-dropdown', 'attachment', 'stravita');
+              if ($li['name_en'] == "stravita") {
+                $drop = menuDrop('menu-dropdown','attachment','stravita');
                 foreach ($drop as $item) {
                   echo '<a class="dropdown-item" href="' . $item['link']. '">' . $item['name'] . '</a>';
                   echo "<div class=\"dropdown-divider\"></div>";
                 }
               } elseif ($li['name_en'] == 'belrosstrah') {
-                $drop = $menu->allWhere('menu-dropdown', 'attachment', 'belrosstrah');
+                $drop = menuDrop('menu-dropdown','attachment','belrosstrah');
                 foreach ($drop as $item) {
                   echo '<a class="dropdown-item" href="' . $item['link']. '">' . $item['name'] . '</a>';
                   echo "<div class=\"dropdown-divider\"></div>";
                 }
               }
-              */?>
+              ?>
             </div>
-          </li>-->
+          </li>
         <? endforeach; ?>
 
 
         <li class="nav-item">
           <a class="nav-link" href="/contact">Контакты</a>
         </li>
-        <!--<li class="nav-item">
-          <a class="nav-link" href="https://calc.stravita.by/#/" target="_blank">Калькулятор</a>
-        </li>-->
 
       </ul>
 
