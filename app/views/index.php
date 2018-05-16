@@ -34,7 +34,7 @@
 
 
 <div class="container">
-  <h1 title="<?= $this->e($title) ?>">Страхование online</h1>
+  <h1>Страхование online</h1>
   <p class="lead">
     Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias asperiores aut, debitis doloremque eligendi est

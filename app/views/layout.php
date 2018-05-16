@@ -14,12 +14,12 @@
 
 <div class="wrap">
   <div class="content">
-    <? $this->insert('blocks/main-nav'); ?>
+<!--    --><?// $this->insert('blocks/main-nav'); ?>
 
     <?= $this->section('content') ?>
   </div><!--/.content-->
 
-<!--  --><?// $this->insert('blocks/footer'); ?>
+  <? $this->insert('blocks/footer'); ?>
 </div><!--wrap-->
 
 <script src="js/scripts.min.js"></script>

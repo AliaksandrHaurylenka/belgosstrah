@@ -20,16 +20,14 @@ class HomeController {
   function __construct(Engine $views, Database $database)
   {
     $this->views = $views;
-    $this->database=$database;
+    $this->database = $database;
   }
+
 
   function index()
   {
     $slides = $this->database->all('slide');
-//    $menu = $this->database->all('menu');
-//    dd($menu);
     echo $this->views->render('index', compact('slides'));
-//    echo $this->views->render('index', ['slides' => $slides, 'menu' => $menu]);
   }
 
   function contact()

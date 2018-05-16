@@ -1,8 +1,8 @@
 <?php
-$sql = new \Aura\SqlQuery\QueryFactory('mysql');
-$pdo = new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
+//$sql = new \Aura\SqlQuery\QueryFactory('mysql');
+//$pdo = new PDO('mysql:host=localhost; dbname=insurance', 'root', '');
 //$pdo = new PDO('mysql:host=localhost; dbname=u473969940_test', 'u473969940_test', 'POAtI9DVf6aT');
-$menu = new \App\Models\Database($sql, $pdo);
+//$menu = new \App\Models\Database($sql, $pdo);
 //dd($menu);
 ?>
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary">
@@ -16,14 +16,15 @@ $menu = new \App\Models\Database($sql, $pdo);
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <?php $result = $menu->all('menu'); ?>
-        <? foreach ($result as $li): ?>
-          <li class="nav-item dropdown">
+<!--        --><?php //$result = $menu->all('menu'); ?>
+        <? foreach ($menu as $li): ?>
+            <li><?= $li['name']; ?></li>
+          <!--<li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-               aria-haspopup="true" aria-expanded="false"><?= $li['name']; ?></a>
+               aria-haspopup="true" aria-expanded="false"><?/*= $li['name']; */?></a>
             <div class="dropdown-menu">
               <?php
-              if ($li['name_en'] == "stravita") {
+/*              if ($li['name_en'] == "stravita") {
                 $drop = $menu->allWhere('menu-dropdown', 'attachment', 'stravita');
                 foreach ($drop as $item) {
                   echo '<a class="dropdown-item" href="' . $item['link']. '">' . $item['name'] . '</a>';
@@ -36,9 +37,9 @@ $menu = new \App\Models\Database($sql, $pdo);
                   echo "<div class=\"dropdown-divider\"></div>";
                 }
               }
-              ?>
+              */?>
             </div>
-          </li>
+          </li>-->
         <? endforeach; ?>
 
 
