@@ -39,6 +39,9 @@ $dispatcher=FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
   $r->get('/children', ['App\Controllers\HomeController', 'children']);
   $r->get('/life_1', ['App\Controllers\HomeController', 'life_1']);
   $r->get('/life_2', ['App\Controllers\HomeController', 'life_2']);
+  $r->get('/pension_1', ['App\Controllers\HomeController', 'pension_1']);
+  $r->get('/pension_2', ['App\Controllers\HomeController', 'pension_2']);
+  $r->get('/avtokasko', ['App\Controllers\HomeController', 'avtokasko']);
 
 });
 

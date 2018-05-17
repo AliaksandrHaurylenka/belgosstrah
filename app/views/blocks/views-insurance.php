@@ -63,7 +63,7 @@
           <p class="card-text">Программа «Пенсия+» дает возможность создать свой личный пенсионный счет...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/pension_1" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
       <div class="card">
@@ -74,7 +74,7 @@
             жизни...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/pension_2" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@
           <p class="card-text">Страхование транспортного средства в страховой компании «Белросстрах» по АВТОКАСКО...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/avtokasko" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
 

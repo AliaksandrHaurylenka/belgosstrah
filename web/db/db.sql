@@ -1,12 +1,13 @@
 -- --------------------------------------------------------
 -- Хост:                         127.0.0.1
--- Версия сервера:               5.5.48 - MySQL Community Server (GPL)
--- ОС Сервера:                   Win32
--- HeidiSQL Версия:              9.3.0.4984
+-- Версия сервера:               5.6.38 - MySQL Community Server (GPL)
+-- Операционная система:         Win32
+-- HeidiSQL Версия:              9.5.0.5196
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
@@ -27,7 +28,6 @@ INSERT INTO `menu` (`id`, `name`, `link`, `attachment`, `name_en`) VALUES
 	(3, 'Белросстрах', '/linl2', 'main', 'belrosstrah');
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
 
-
 -- Дамп структуры для таблица insurance.menu-dropdown
 CREATE TABLE IF NOT EXISTS `menu-dropdown` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -35,20 +35,21 @@ CREATE TABLE IF NOT EXISTS `menu-dropdown` (
   `link` varchar(50) NOT NULL,
   `attachment` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы insurance.menu-dropdown: ~4 rows (приблизительно)
+-- Дамп данных таблицы insurance.menu-dropdown: ~9 rows (приблизительно)
 /*!40000 ALTER TABLE `menu-dropdown` DISABLE KEYS */;
 INSERT INTO `menu-dropdown` (`id`, `name`, `link`, `attachment`) VALUES
-	(1, 'Страхование детей', '/link1', 'stravita'),
-	(2, 'Страхование жизни', '/link2', 'stravita'),
-	(3, 'АВТОКАСКО', '/link3', 'belrosstrah'),
+	(1, 'Страхование детей', '/children', 'stravita'),
+	(2, 'Страхование жизни', '/life_1', 'stravita'),
+	(3, 'АВТОКАСКО', '/avtokasko', 'belrosstrah'),
 	(4, 'Имущество', '/link4', 'belrosstrah'),
-	(5, 'Пенсионные программы', '/link5', 'stravita'),
 	(6, 'Туризм', '/link6', 'belrosstrah'),
-	(7, 'Здоровье', '/link6', 'belrosstrah');
+	(7, 'Здоровье', '/link6', 'belrosstrah'),
+	(8, 'Защищенный кредит', '/life_2', 'stravita'),
+	(10, 'Пенсия', '/pension_2', 'stravita'),
+	(11, 'Пенсия+', '/pension_1', 'stravita');
 /*!40000 ALTER TABLE `menu-dropdown` ENABLE KEYS */;
-
 
 -- Дамп структуры для таблица insurance.slide
 CREATE TABLE IF NOT EXISTS `slide` (
@@ -57,16 +58,15 @@ CREATE TABLE IF NOT EXISTS `slide` (
   `class` varchar(50) NOT NULL,
   `alt` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы insurance.slide: ~4 rows (приблизительно)
+-- Дамп данных таблицы insurance.slide: ~2 rows (приблизительно)
 /*!40000 ALTER TABLE `slide` DISABLE KEYS */;
 INSERT INTO `slide` (`id`, `image`, `class`, `alt`) VALUES
-	(1, '1.jpg', 'active', ''),
-	(2, '2.jpg', '', ''),
-	(3, '3.jpg', '', ''),
-	(4, '4.jpg', '', '');
+	(1, '2.jpg', 'active', ''),
+	(2, '4.jpg', '', '');
 /*!40000 ALTER TABLE `slide` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

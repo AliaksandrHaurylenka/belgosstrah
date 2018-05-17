@@ -49,4 +49,19 @@ class HomeController {
   {
     echo $this->views->render('life_2');
   }
+
+  function pension_1()
+  {
+    echo $this->views->render('pension_1');
+  }
+
+  function pension_2()
+  {
+    echo $this->views->render('pension_2');
+  }
+
+  function avtokasko()
+  {
+    echo $this->views->render('avtokasko');
+  }
 } 
