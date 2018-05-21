@@ -5,6 +5,7 @@
     ])
 ?>
 
+<? $this->insert('blocks/feedback'); ?>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -34,6 +35,23 @@
 
 
 <div class="container">
+
+  <div class="row icon">
+    <div class="col-md-3 d-flex align-items-center">
+      <a href="" data-toggle="modal" data-target="#modal_feedback">
+        <img src="/img/main/email.png" class="img-fluid" alt="">
+      </a>
+    </div>
+    <div class="col-md-3 d-flex align-items-center"><a href=" https://calc.stravita.by/#/" target="_blank"><img src="/img/main/calc.png" class="img-fluid" alt=""></a></div>
+    <div class="col-md-3 d-flex align-items-center"><a href=""><img src="/img/main/transfer.png"  class="img-fluid" alt=""></a></div>
+    <div class="col-md-3 d-flex align-items-center">
+      <blockquote class="blockquote agent">
+        <p class="mb-0 h6 lead mb-3">Ваш персональный страховой агент</p>
+        <img src="/img/main/agent.png" class="img-fluid" alt="">
+        <p class="mb-0 h5 lead">Наталья<br>Бендер-Врублевская</p>
+      </blockquote>
+    </div>
+  </div>
   <h1>Страхование online</h1>
   <p class="lead">
     Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
