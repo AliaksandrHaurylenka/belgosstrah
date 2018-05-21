@@ -74,4 +74,9 @@ class HomeController {
   {
     echo $this->views->render('health');
   }
+
+  function tourism()
+  {
+    echo $this->views->render('tourism');
+  }
 } 
