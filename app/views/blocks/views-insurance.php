@@ -112,7 +112,7 @@
           <p class="card-text">Любое ваше имущество может быть застраховано в страховой компании «Белросстрах»...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/property" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
 
@@ -137,7 +137,7 @@
           <p class="card-text">Жизнь полна случайностей. Многие происходят тогда, когда их не ждешь...</p>
         </div>
         <div class="card-footer">
-          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/health" role="button">Подробнее &raquo;</a></p>
         </div>
       </div>
     </div>

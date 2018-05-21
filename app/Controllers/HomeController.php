@@ -64,4 +64,14 @@ class HomeController {
   {
     echo $this->views->render('avtokasko');
   }
+
+  function property()
+  {
+    echo $this->views->render('property');
+  }
+
+  function health()
+  {
+    echo $this->views->render('health');
+  }
 } 
