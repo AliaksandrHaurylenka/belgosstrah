@@ -50,7 +50,7 @@
     </div>
 
     <div class="col-md-3 d-flex align-items-center">
-      <a href="/" class="transfer">
+      <a role="button" tabindex="0" class="transfer">
         <img src="/img/main/transfer.png"  class="img-fluid" alt="">
       </a>
     </div>
@@ -58,8 +58,8 @@
     <div class="col-md-3 d-flex align-items-center">
       <blockquote class="blockquote agent">
         <p class="mb-0 h6 lead mb-3">Ваш персональный страховой агент</p>
-        <img src="/img/main/agent.png" class="img-fluid" alt="">
-        <p class="mb-0 h5 lead">Наталья<br>Бендер-Врублевская</p>
+        <img src="/img/main/agent.png" class="img-fluid mb-3" alt="">
+        <p class="mb-0 h5 lead">Наталья</p>
       </blockquote>
     </div>
   </div>
