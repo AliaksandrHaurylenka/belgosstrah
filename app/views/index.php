@@ -42,8 +42,19 @@
         <img src="/img/main/email.png" class="img-fluid" alt="">
       </a>
     </div>
-    <div class="col-md-3 d-flex align-items-center"><a href=" https://calc.stravita.by/#/" target="_blank"><img src="/img/main/calc.png" class="img-fluid" alt=""></a></div>
-    <div class="col-md-3 d-flex align-items-center"><a href=""><img src="/img/main/transfer.png"  class="img-fluid" alt=""></a></div>
+
+    <div class="col-md-3 d-flex align-items-center">
+      <a href="https://calc.stravita.by/#/" class="calc" target="_blank">
+        <img src="/img/main/calc.png" class="img-fluid" alt="">
+      </a>
+    </div>
+
+    <div class="col-md-3 d-flex align-items-center">
+      <a href="/" class="transfer">
+        <img src="/img/main/transfer.png"  class="img-fluid" alt="">
+      </a>
+    </div>
+
     <div class="col-md-3 d-flex align-items-center">
       <blockquote class="blockquote agent">
         <p class="mb-0 h6 lead mb-3">Ваш персональный страховой агент</p>

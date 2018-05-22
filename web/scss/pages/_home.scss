@@ -25,10 +25,7 @@
 .icon {
   text-align: center;
   margin-bottom: 2rem;
-  //a:active {
-  //  outline: none;
-  //}
-  button:active, button:focus {
+  a {
     outline: none;
   }
 }

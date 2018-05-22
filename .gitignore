@@ -2,6 +2,6 @@
 /dist/
 /.git/
 /web/css/
-/web/js/scripts.min.js
+scripts.min.js
 /.idea/
 

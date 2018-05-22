@@ -23,8 +23,9 @@
 
   <? $this->insert('blocks/footer'); ?>
 </div><!--wrap-->
-
+<script src="js/tether.min.js"></script>
 <script src="js/scripts.min.js"></script>
+
 <!-- Обратная связь -->
 <script src="feedback/vendors/jgrowl/jquery.jgrowl.min.js"></script>
 <script src="feedback/js/main.js"></script>
