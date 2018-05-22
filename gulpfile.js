@@ -108,6 +108,10 @@ gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function(){
     'web/fonts/**/*'
   ]).pipe(gulp.dest('dist/web/fonts'));
 
+  var buildFeedback=gulp.src([
+    'web/feedback/**/*'
+  ]).pipe(gulp.dest('dist/web/feedback'));
+
 });
 
 
