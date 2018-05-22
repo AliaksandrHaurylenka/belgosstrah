@@ -65,14 +65,19 @@
   </div>
   <h1>Страхование online</h1>
   <p class="lead">
-    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias asperiores aut, debitis doloremque eligendi est
-    eveniet iure iusto, magnam nobis nostrum perferendis perspiciatis possimus, quibusdam tenetur velit veritatis
-    voluptate.
+    Мы уже давно покупаем бытовую технику через интернет-магазины, заказываем еду домой и в офис, оплачиваем онлайн за квартиру, мобильную связь, детский садик, курсы, покупаем билеты в кино, не посещая кассы, бронируем столик в кафе и в ресторане через компьютер или смартфон – и все это мы делаем онлайн. Для нас это уже стали привычные вещи.
   </p>
   <p class="lead">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam cum distinctio dolor eveniet fugit, harum
-    illum labore minus molestias nesciunt nobis nulla omnis quidem quos suscipit tenetur voluptates.
+    Теперь можно смело добавить в этот ряд и страховку онлайн. На улице и дома, в общественном транспорте и в авто, в аэропорту и на вокзале – в любом месте и в любое время можно купить страховку с компьютера, смартфона или планшета.
   </p>
+  <h2>Как купить страховку online?</h2>
+  <p class="lead">Все просто. Для этого нужно:</p>
+  <ol class="mb-5 lead">
+    <li>Выбрать вид страхования;</li>
+    <li>Нажать кнопку "Застраховаться";</li>
+    <li>Заполнить нужные поля;</li>
+    <li>Отправить форму для принятия заявки;</li>
+    <li>Дождаться связи с персональным страховым агентом.</li>
+  </ol>
   <? $this->insert('blocks/views-insurance'); ?>
 </div><!-- /.container -->

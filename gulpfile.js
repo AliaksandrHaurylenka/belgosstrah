@@ -100,7 +100,8 @@ gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function(){
 
   var buildJs=gulp.src([
     'web/js/scripts.min.js',
-    'web/js/config.js'
+    'web/js/config.js',
+    'web/js/tether.min.js',
   ]).pipe(gulp.dest('dist/web/js'));
 
 
