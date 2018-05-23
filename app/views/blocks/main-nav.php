@@ -15,14 +15,14 @@
                aria-haspopup="true" aria-expanded="false"><?= $li['name']; ?></a>
             <div class="dropdown-menu">
               <?php
-              if ($li['name_en'] == "stravita") {
-                $drop = menuDrop('menu-dropdown','attachment','stravita');
+              if ($li['name_en'] == "belrosstrah") {
+                $drop = menuDrop('menu-dropdown','attachment','belrosstrah');
                 foreach ($drop as $item) {
                   echo '<a class="dropdown-item" href="' . $item['link']. '">' . $item['name'] . '</a>';
                   echo "<div class=\"dropdown-divider\"></div>";
                 }
-              } elseif ($li['name_en'] == 'belrosstrah') {
-                $drop = menuDrop('menu-dropdown','attachment','belrosstrah');
+              } elseif ($li['name_en'] == 'stravita') {
+                $drop = menuDrop('menu-dropdown','attachment','stravita');
                 foreach ($drop as $item) {
                   echo '<a class="dropdown-item" href="' . $item['link']. '">' . $item['name'] . '</a>';
                   echo "<div class=\"dropdown-divider\"></div>";

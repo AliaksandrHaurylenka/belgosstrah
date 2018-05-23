@@ -8,13 +8,13 @@
 
       <div class="col-md-3">
         <nav class="nav flex-column">
-          <?php $menuDrop = menuDrop('menu', 'name_en', 'stravita'); ?>
+          <?php $menuDrop = menuDrop('menu', 'name_en', 'belrosstrah'); ?>
           <?php foreach ($menuDrop as $company): ?>
           <p class="lead my-2 pb-2"><?= $company['name']; ?></p>
           <?php endforeach; ?>
 
           <?php
-          $drop = menuDrop('menu-dropdown','attachment','stravita');
+          $drop = menuDrop('menu-dropdown','attachment','belrosstrah');
           foreach ($drop as $item) {
             echo '<a class="nav-link pl-0" href="' . $item['link'] . '">' . $item['name'] . '</a>';
           }
@@ -24,13 +24,13 @@
 
       <div class="col-md-3">
         <nav class="nav flex-column">
-          <?php $menuDrop = menuDrop('menu', 'name_en', 'belrosstrah'); ?>
+          <?php $menuDrop = menuDrop('menu', 'name_en', 'stravita'); ?>
           <?php foreach ($menuDrop as $company): ?>
             <p class="lead my-2 pb-2"><?= $company['name']; ?></p>
           <?php endforeach; ?>
 
           <?php
-          $drop = menuDrop('menu-dropdown','attachment','belrosstrah');
+          $drop = menuDrop('menu-dropdown','attachment','stravita');
           foreach ($drop as $item) {
             echo '<a class="nav-link pl-0" href="' . $item['link'] . '">' . $item['name'] . '</a>';
           }

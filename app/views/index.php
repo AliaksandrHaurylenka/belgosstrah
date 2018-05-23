@@ -38,7 +38,7 @@
 
   <div class="row icon">
     <div class="col-md-3 d-flex align-items-center">
-      <a href="" data-toggle="modal" data-target="#modal_feedback">
+      <a href="" data-toggle="modal" data-target="#modal_feedback" class="feedback">
         <img src="/img/main/email.png" class="img-fluid" alt="">
       </a>
     </div>

@@ -18,15 +18,7 @@ $(function(){
     "</ul>"+
     "<p><strong>В иных случаях стоимость доставки составляет 4 рубля.</strong></p>"+
     "<p>Обращения рассматриваются:<br> пн.-вс. 8.30 - 17.30</p>"+
-    "<p>Доставка осуществляется:<br> пн.-пт. 9.00 -16.00, сб. 10.00-16.00</p>",
-    /*template:
-    '<div class="popover" role="tooltip">' +
-      '<div class="popover-arrow">' +
-      '</div>' +
-      '<h3 class="popover-title">dfghdfh</h3>' +
-      '<div class="popover-content">' +
-      '</div>' +
-    '</div>'*/
+    "<p>Доставка осуществляется:<br> пн.-пт. 9.00 -16.00, сб. 10.00-16.00</p>"
   });
 
   $('.calc').popover({
@@ -36,7 +28,7 @@ $(function(){
     content: "And here's some amazing content. It's very engaging. Right?"
   });
 
-  $('[data-target="#modal_feedback"]').popover({
+  $('.feedback').popover({
     placement: pos,
     trigger: trig,
     title: 'Обратная связь',

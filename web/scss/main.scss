@@ -1,10 +1,13 @@
+@import 'utils/variables';
 @import 'utils/mixins';
+
 
 @import "fonts";
 
 @import 'base/base';
 
-//@import 'components/sender-card';
+@import 'components/buttons';
+
 @import 'layouts/footer';
 
 

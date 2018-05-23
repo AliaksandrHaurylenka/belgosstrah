@@ -44,7 +44,7 @@
         <p class="card-text">Страхование от несчастных случаев и болезней на время поездки за границу в страховой компании «Белросстрах»...</p>
       </div>
       <div class="card-footer">
-        <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="/tourism" role="button">Подробнее &raquo;</a></p>
       </div>
     </div>
 
