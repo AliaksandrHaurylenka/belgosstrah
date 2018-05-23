@@ -15,9 +15,9 @@
 
           <?php
           $drop = menuDrop('menu-dropdown','attachment','belrosstrah');
-          foreach ($drop as $item) {
-            echo '<a class="nav-link pl-0" href="' . $item['link'] . '">' . $item['name'] . '</a>';
-          }
+            foreach ($drop as $item) {
+              echo '<a class="nav-link pl-0" href="' . $item['link'] . '">' . $item['name'] . '</a>';
+            }
           ?>
         </nav>
       </div>

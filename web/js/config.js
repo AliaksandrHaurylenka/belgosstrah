@@ -34,6 +34,30 @@ $(function(){
     title: 'Обратная связь',
     content: "And here's some amazing content. It's very engaging. Right?"
   });
-  // alert('Hy');
-  // $('#myModal').modal();
+
+    //АКТИВНЫЕ ВКЛАДКИ
+    var pageHref = window.location.pathname;
+    $('.navbar-nav li a, .nav.flex-column a').removeClass('active');
+    $('.navbar-nav a, .nav.flex-column a').each(function(){ // для каждой ссылки
+        var linkHref = $(this).attr('href');//получаем href
+        if (linkHref == pageHref){//сравниваем полученное из адресной строки с href ссылки
+            // при совпадении присваиваем класс - какому элементу хотите?????
+            $(this).closest('.navbar-nav li a, .nav.flex-column a').addClass('active');
+        }
+    });
+
+    //АКТИВНАЯ ВКЛАДКА "ИСТОРИЯ"
+    var pagePathname = window.location.pathname;
+    $('.navbar-nav li .nav-link').removeClass('active');
+    $('.navbar-nav .nav-link').each(function(){
+        // var belrosstrah = '/belrosstrah=avtokasko';
+        var reg = /[a-z]/i;
+        var belrosstrah = '/belrosstrah' +  window.location.search;
+        // alert(belrosstrah);
+
+
+        if ((pagePathname ==  belrosstrah)){
+            $('.navbar-nav li a[href="/belrosstrah"]').addClass('active');
+        }
+    });
 });
