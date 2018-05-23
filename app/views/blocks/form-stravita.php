@@ -1,8 +1,3 @@
-<div class="">
-  <button class="button" data-toggle="modal" data-target="#modal_feedback">Застраховаться</button>
-</div>
-
-
 <!-- Модальное окно "ОБРАТНАЯ СВЯЗЬ" -->
 <!--noindex-->
 <div class="modal fade" id="modal_feedback" tabindex="-1" role="dialog">
@@ -51,8 +46,8 @@
                     <div class="form-group has-feedback">
                       <label for="sex" class="control-label">Пол</label>
                       <select class="form-control" id="sex">
-                        <option>Женщина</option>
-                        <option>Мужчина</option>
+                        <option>Женский</option>
+                        <option>Мужской</option>
                       </select>
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
@@ -71,7 +66,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col">
                     <!-- Спортивные интересы -->
                     <div class="form-group has-feedback">
                       <label for="sport" class="control-label">Занимаетелись спортом? Если да, то каким?</label>
@@ -82,13 +77,29 @@
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group has-feedback">
+                      <label for="type" class="control-label">Вид страхования</label>
+                      <select class="form-control" id="type">
+                        <option>Страхование детей</option>
+                        <option>Страхование жизни</option>
+                        <option>Защищенный кредит</option>
+                        <option>Пенсия</option>
+                        <option>Пенсия+</option>
+                      </select>
+                      <span class="glyphicon form-control-feedback"></span>
+                    </div>
+                  </div>
+
                   <div class="col-sm-6">
                     <!-- Сумма страхования -->
                     <div class="form-group has-feedback">
                       <label for="sum" class="control-label">Сумма страхования</label>
                       <input id="sum" type="number" name="sum" required="required"
                              class="form-control"
-                             minlength="2"
                              value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
@@ -131,7 +142,7 @@
                 <div class="captcha">
                   <div class="refresh-captcha">
                     <img class="img-captcha img-responsive" src="/feedback/captcha/captcha.php"
-                         data-src="/feedback/captcha/captcha.php">
+                         data-src="/feedback/captcha/captcha.php" alt="">
                     <span>* Нажмите на картинку, чтобы обновить.</span>
                   </div>
                   <div class="form-group has-feedback">

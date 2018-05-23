@@ -88,7 +88,11 @@
       (от 40% до 100%). Одновременно «Стравита» предоставит Страхователю право на льготный страховой взнос при
       сохранении размера выплаты по основным страховым случаям.</p>
 
-    <?php $this->insert('blocks/button'); ?>
+    <div class="">
+      <button class="button" data-toggle="modal" data-target="#modal_feedback">Застраховаться</button>
+    </div>
+
+    <?php $this->insert('blocks/form-stravita'); ?>
 
   </section>
 

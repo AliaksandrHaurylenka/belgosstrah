@@ -11,8 +11,8 @@
           <div class="col-sm-6">
             <!-- Имя пользователя -->
             <div class="form-group has-feedback">
-              <label for="name" class="control-label">Ф.И.О. (старше 14 лет)</label>
-              <input id="name" type="text" name="name" class="form-control"
+              <label class="control-label">Ф.И.О. (старше 14 лет)</label>
+              <input type="text" name="name" class="form-control"
                      value="" minlength="2" required="required">
               <span class="glyphicon form-control-feedback"></span>
             </div>
@@ -20,8 +20,8 @@
           <div class="col-sm-6">
             <!-- Возраст -->
             <div class="form-group has-feedback">
-              <label for="number" class="control-label">Количество человек</label>
-              <input id="number" type="number" name="number" required="required"
+              <label class="control-label">Количество человек</label>
+              <input type="number" name="number" required="required"
                      class="form-control"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
@@ -33,8 +33,8 @@
           <div class="col-sm-6">
             <!-- Пол страхуемого -->
             <div class="form-group has-feedback">
-              <label for="number" class="control-label">Количество детей до 14 лет</label>
-              <input id="number" type="number" name="number" required="required"
+              <label class="control-label">Количество детей до 14 лет</label>
+              <input type="number" name="number" required="required"
                      class="form-control"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
@@ -43,10 +43,9 @@
           <div class="col-sm-6">
             <!-- Работа -->
             <div class="form-group has-feedback">
-              <label for="city" class="control-label">Пункт назначения</label>
-              <input id="city" type="text" name="city" required="required"
+              <label class="control-label">Пункт назначения</label>
+              <input type="text" name="city" required="required"
                      class="form-control"
-                     minlength="2"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
@@ -57,10 +56,9 @@
           <div class="col-sm-6">
             <!-- Спортивные интересы -->
             <div class="form-group has-feedback">
-              <label for="date" class="control-label">Дата отъезда</label>
-              <input id="date" type="date" name="date" required="required"
+              <label class="control-label">Дата отъезда</label>
+              <input type="date" name="date" required="required"
                      class="form-control"
-                     minlength="4"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
@@ -69,10 +67,9 @@
           <div class="col-sm-6">
             <!-- Спортивные интересы -->
             <div class="form-group has-feedback">
-              <label for="date" class="control-label">Дата приезда</label>
-              <input id="date" type="date" name="date" required="required"
+              <label class="control-label">Дата приезда</label>
+              <input type="date" name="date" required="required"
                      class="form-control"
-                     minlength="4"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
@@ -82,8 +79,8 @@
         <div class="row">
           <div class="col">
             <div class="form-group has-feedback">
-              <label for="boundary" class="control-label">Будете ли заниматься активным отдыхом?</label>
-              <select class="form-control" id="boundary">
+              <label class="control-label">Будете ли заниматься активным отдыхом?</label>
+              <select class="form-control">
                 <option>Нет</option>
                 <option>Да</option>
               </select>
@@ -95,8 +92,8 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group has-feedback">
-              <label for="boundary" class="control-label">Вид страховки</label>
-              <select class="form-control" id="boundary">
+              <label class="control-label">Вид страховки</label>
+              <select class="form-control">
                 <option>Стандарт</option>
                 <option>Оптима</option>
                 <option>Престиж</option>
@@ -108,10 +105,9 @@
           <div class="col-sm-6">
             <!-- Сумма страхования -->
             <div class="form-group has-feedback">
-              <label for="sum" class="control-label">Сумма страхования</label>
-              <input id="sum" type="number" name="sum" required="required"
+              <label class="control-label">Сумма страхования</label>
+              <input type="number" name="sum" required="required"
                      class="form-control"
-                     minlength="2"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
@@ -122,8 +118,8 @@
           <div class="col-sm-6">
             <!-- Спортивные интересы -->
             <div class="form-group has-feedback">
-              <label for="phone" class="control-label">Телефон</label>
-              <input id="phone" type="text" name="phone" required="required"
+              <label class="control-label">Телефон</label>
+              <input type="text" name="phone" required="required"
                      class="form-control"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
@@ -132,8 +128,8 @@
           <div class="col-sm-6">
             <!-- E-mail -->
             <div class="form-group has-feedback">
-              <label for="email" class="control-label">E-mail</label>
-              <input id="email" type="email" name="email"
+              <label class="control-label">E-mail</label>
+              <input type="email" name="email"
                      class="form-control"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
@@ -143,8 +139,8 @@
 
         <!-- Сообщение пользователя -->
         <div class="form-group has-feedback">
-          <label for="message" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
-          <textarea id="message" name="message" class="form-control"
+          <label class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
+          <textarea name="message" class="form-control"
                     rows="5" minlength="10"
                     maxlength="500">
                   </textarea>
@@ -154,7 +150,7 @@
         <div class="captcha">
           <div class="refresh-captcha">
             <img class="img-captcha img-responsive" src="/feedback/captcha/captcha.php"
-                 data-src="/feedback/captcha/captcha.php">
+                 data-src="/feedback/captcha/captcha.php" alt="">
             <span>* Нажмите на картинку, чтобы обновить.</span>
           </div>
           <div class="form-group has-feedback">
