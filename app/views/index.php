@@ -36,26 +36,26 @@
 
 <div class="container">
 
-  <div class="row icon">
-    <div class="col-md-3 d-flex align-items-center">
+  <div class="row icon mt-2">
+    <div class="col col-sm-3 d-flex align-items-center justify-content-center">
       <a href="" data-toggle="modal" data-target="#modal_feedback" class="feedback">
         <img src="/img/main/email.png" class="img-fluid" alt="">
       </a>
     </div>
 
-    <div class="col-md-3 d-flex align-items-center">
-      <a href="https://calc.stravita.by/#/" class="calc" target="_blank">
-        <img src="/img/main/calc.png" class="img-fluid" alt="">
-      </a>
-    </div>
-
-    <div class="col-md-3 d-flex align-items-center">
+    <div class="col col-sm-3 d-flex align-items-center justify-content-center">
       <a role="button" tabindex="0" class="transfer">
         <img src="/img/main/transfer.png"  class="img-fluid" alt="">
       </a>
     </div>
 
-    <div class="col-md-3 d-flex align-items-center">
+    <div class="col col-sm-3 d-flex align-items-center justify-content-center">
+      <a href="https://calc.stravita.by/#/" class="calc" target="_blank">
+        <img src="/img/main/calc.png" class="img-fluid" alt="">
+      </a>
+    </div>
+
+    <div class="col-12 col-sm-3 d-flex align-items-center justify-content-center">
       <blockquote class="blockquote agent">
         <p class="mb-0 h6 lead mb-3">Ваш персональный страховой агент</p>
         <img src="/img/main/agent.png" class="img-fluid mb-3" alt="">

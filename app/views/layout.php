@@ -16,7 +16,7 @@
 
 <div class="wrap">
   <div class="content">
-    <? $this->insert('blocks/main-nav'); ?>
+    <? $this->insert('blocks/nav-carousel'); ?>
 
     <?= $this->section('content') ?>
   </div><!--/.content-->

@@ -4,9 +4,9 @@
     <p class="float-right mt-2"><a href="#" class="company">Наверх</a></p>
 
     <div class="row">
-      <p class="col-md-4 mt-2">&copy; 2017 - <?= strftime('%Y'); ?> <a href="/" class="company">Страхование online</a></p>
+      <p class="col-sm-4 mt-2">&copy; 2017 - <?= strftime('%Y'); ?> <a href="/" class="company">Страхование online</a></p>
 
-      <div class="col-md-3">
+      <div class="col">
         <nav class="nav flex-column">
           <?php $menuDrop = menuDrop('menu', 'name_en', 'belrosstrah'); ?>
           <?php foreach ($menuDrop as $company): ?>
@@ -22,7 +22,7 @@
         </nav>
       </div>
 
-      <div class="col-md-3">
+      <div class="col">
         <nav class="nav flex-column">
           <?php $menuDrop = menuDrop('menu', 'name_en', 'stravita'); ?>
           <?php foreach ($menuDrop as $company): ?>
