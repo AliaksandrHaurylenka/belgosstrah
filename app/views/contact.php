@@ -15,10 +15,11 @@
   </div>
 
   <div class="row">
-    <div class="col-md-6">
-      Карта
+    <div class="col-sm-6 mt-3">
+      <p>Тел: +375(29)835-15-16</p>
+      <p>E-mail: tasha_rub@mail.ru</p>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       Адрес, Телефон
     </div>
   </div>
