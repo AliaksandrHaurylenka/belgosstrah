@@ -60,4 +60,12 @@ $(function(){
             $('.navbar-nav li a[href="/belrosstrah"]').addClass('active');
         }
     });
+
+
+    //Скрытие модального окна
+    $('#optima').click(function(){
+      // alert("Ok")
+      $('#modal_kasko-optima').modal('hide');
+      $('#modal').modal('show');
+    })
 });

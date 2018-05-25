@@ -44,6 +44,7 @@
     <p><strong>Вариант Б</strong> — при наступлении страхового случая сумма ущерба рассчитывается с учетом износа запасных частей и деталей, подлежащих замене в результате страхового случая.</p>
     <p>Страховое возмещение выплачивается по калькуляции.</p>
 
+
     <div class="row justify-content-center">
       <div class="col-md-4">
         <?php $this->insert('blocks/kasko-optima'); ?>
@@ -56,6 +57,10 @@
       </div>
     </div>
 
+    <!--<button class="button" data-toggle="modal" data-target="#modal">Застраховаться</button>
+    <?php /*$this->insert('blocks/form-autokasko'); */?>
+
+    <button class="button" id="optima">Click</button>-->
   </section>
 
 

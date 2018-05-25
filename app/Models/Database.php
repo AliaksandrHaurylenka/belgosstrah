@@ -53,13 +53,13 @@ class Database
     return $result;
   }
 
-  function getOne($table, $id)
+  function getOne($table, $col, $val)
   {
     $select = $this->queryFactory->newSelect();
     $select->cols(['*'])
         ->from($table)
-        ->where('id = :id')
-        ->bindValue('attachment', $id);
+        ->where("$col = :$val")
+        ->bindValue("$val", $val);
 
     $sth = $this->pdo->prepare($select->getStatement());
     $sth->execute($select->getBindValues());

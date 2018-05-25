@@ -27,6 +27,7 @@ class HomeController {
   function index()
   {
     $slides = $this->database->all('slide');
+//    dd($slides);
     echo $this->views->render('index', compact('slides'));
   }
 
@@ -62,7 +63,10 @@ class HomeController {
 
   function avtokasko()
   {
-    echo $this->views->render('avtokasko');
+    $optima = $this->database->getOne('program', 'program_en', 'optima');
+    $autoprofy = $this->database->getOne('program', 'program_en', 'autoprofy');
+    $personal = $this->database->getOne('program', 'program_en', 'personal');
+    echo $this->views->render('avtokasko', compact('optima', 'autoprofy', 'personal'));
   }
 
   function property()

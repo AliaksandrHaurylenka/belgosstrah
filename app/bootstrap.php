@@ -46,6 +46,8 @@ $dispatcher=FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
   $r->get('/tourism', ['App\Controllers\HomeController', 'tourism']);
   $r->get('/health', ['App\Controllers\HomeController', 'health']);
 
+
+  $r->post('/program', ['App\Controllers\ProgramController', 'name_program']);
 });
 
 // Fetch method and URI from somewhere

@@ -1,5 +1,4 @@
 <button class="button" data-toggle="modal" data-target="#modal_kasko-optima">Программа "КАСКО-Оптима"</button>
-
 <!-- Модальное окно "Программа Стандарт" -->
 <!--noindex-->
 <div class="modal fade" id="modal_kasko-optima" tabindex="-1" role="dialog">
@@ -33,11 +32,8 @@
           <li>повреждения автомобиля при его погрузке, выгрузке или транспортировке любым видом транспорта, например при эвакуации органами ГАИ:</li>
           <li>повреждения автомобиля животными, насекомыми.</li>
         </ul>
-        <?php $this->insert('blocks/form-autokasko'); ?>
-
-
       </div><!--modal-body-->
-      <div class="modal-footer"></div>
+      <div class="modal-footer"><button class="button" id="optima">Click</button></div>
     </div>
   </div>
 </div>
