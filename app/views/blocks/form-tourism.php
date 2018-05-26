@@ -14,14 +14,14 @@
     <div class="panel-body">
 
       <!-- Форма обратной связи -->
-      <form id="feedbackForm" action="/feedback/process/process.php" enctype="multipart/form-data" novalidate>
+      <form id="feedbackForm" action="/feedback/process/tourism.php" novalidate>
         <div class="row">
           <div class="col-sm-6">
             <!-- Имя пользователя -->
             <div class="form-group has-feedback">
               <label class="control-label">Ф.И.О. (старше 14 лет)</label>
               <input type="text" name="name" class="form-control"
-                     value="" minlength="2" required="required">
+                     value="Danila" minlength="2" required="required">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -31,7 +31,7 @@
               <label class="control-label">Количество человек</label>
               <input type="number" name="number" required="required"
                      class="form-control"
-                     value="">
+                     value="2">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -42,9 +42,9 @@
             <!-- Пол страхуемого -->
             <div class="form-group has-feedback">
               <label class="control-label">Количество детей до 14 лет</label>
-              <input type="number" name="number" required="required"
+              <input type="number" name="children" required="required"
                      class="form-control"
-                     value="">
+                     value="1">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -54,7 +54,7 @@
               <label class="control-label">Пункт назначения</label>
               <input type="text" name="city" required="required"
                      class="form-control"
-                     value="">
+                     value="Турция">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -65,9 +65,9 @@
             <!-- Спортивные интересы -->
             <div class="form-group has-feedback">
               <label class="control-label">Дата отъезда</label>
-              <input type="date" name="date" required="required"
+              <input type="date" name="date1" required="required"
                      class="form-control"
-                     value="">
+                     value="02.06.2018">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -76,9 +76,9 @@
             <!-- Спортивные интересы -->
             <div class="form-group has-feedback">
               <label class="control-label">Дата приезда</label>
-              <input type="date" name="date" required="required"
+              <input type="date" name="date2" required="required"
                      class="form-control"
-                     value="">
+                     value="15.06.2018">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -87,11 +87,10 @@
         <div class="row">
           <div class="col">
             <div class="form-group has-feedback">
-              <label class="control-label">Будете ли заниматься активным отдыхом?</label>
-              <select class="form-control">
-                <option>Нет</option>
-                <option>Да</option>
-              </select>
+              <label class="control-label">Будете ли заниматься активным отдыхом? Каким?</label>
+              <input type="text" name="sport" required
+                     class="form-control"
+                     value="Дайвинг">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -101,7 +100,7 @@
           <div class="col-md-6">
             <div class="form-group has-feedback">
               <label class="control-label">Вид страховки</label>
-              <select class="form-control">
+              <select class="form-control" name="type">
                 <option>Стандарт</option>
                 <option>Оптима</option>
                 <option>Престиж</option>
@@ -116,7 +115,7 @@
               <label class="control-label">Сумма страхования</label>
               <input type="number" name="sum" required="required"
                      class="form-control"
-                     value="">
+                     value="2000">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -129,7 +128,7 @@
               <label class="control-label">Телефон</label>
               <input type="text" name="phone" required="required"
                      class="form-control"
-                     value="">
+                     value="23424324">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -139,7 +138,7 @@
               <label class="control-label">E-mail</label>
               <input type="email" name="email"
                      class="form-control"
-                     value="">
+                     value="goric0312@mail.ru">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -150,8 +149,7 @@
           <label class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
           <textarea name="message" class="form-control"
                     rows="5" minlength="10"
-                    maxlength="500">
-                  </textarea>
+                    maxlength="500"></textarea>
         </div>
 
         <!-- Капча -->
@@ -187,6 +185,11 @@
 
       </form>
       <!--КОНЕЦ ФОРМЫ-->
+
+      <!-- Сообщение об успешной отправки формы -->
+      <div class="mt-3 alert alert-warning success-message d-none">
+        Сообщение успешно отправлено.
+      </div>
 
     </div><!--panel-body-->
   </div><!--panel panel-success-->
