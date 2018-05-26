@@ -1,4 +1,4 @@
-<button class="button" data-toggle="modal" data-target="#modal_standard">Программа "Стандарт"</button>
+<button class="button program" data-toggle="modal" data-target="#modal_standard">Программа "Стандарт"</button>
 
 <!-- Модальное окно "Программа Стандарт" -->
 <!--noindex-->
@@ -40,7 +40,6 @@
 
         <p><strong>В любой стране мира мы заботимся о вас и всегда готовы оказать помощь в трудную минуту.</strong></p>
 
-        <?php $this->insert('blocks/form-tourism'); ?>
       </div><!--modal-body-->
       <div class="modal-footer"></div>
     </div>

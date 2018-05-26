@@ -45,22 +45,23 @@
     <p>Страховое возмещение выплачивается по калькуляции.</p>
 
 
-    <div class="row justify-content-center">
-      <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
         <?php $this->insert('blocks/kasko-optima'); ?>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
         <?php $this->insert('blocks/personal-protection'); ?>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 d-flex align-items-center justify-content-center">
         <?php $this->insert('blocks/kasko-autoprofy'); ?>
       </div>
     </div>
 
-    <button class="button" data-toggle="modal" data-target="#modal">Застраховаться</button>
+    <div class="d-flex justify-content-center">
+      <button class="button" data-toggle="modal" data-target="#modal">Застраховаться</button>
+    </div>
     <?php $this->insert('blocks/form-autokasko'); ?>
 
-<!--    <button class="button" id="optima">Click</button>-->
   </section>
 
 

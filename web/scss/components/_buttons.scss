@@ -14,6 +14,18 @@
   outline: none; //http://htmlbook.ru/css/outline
   transition: background-color .1s ease;
   cursor: pointer;
+  &.program {
+    background-color: #0275d8;
+    &::after {
+      background-color: darken(#0275d8, 50%);
+    }
+    &:hover {
+      background-color: lighten(#0275d8, 3%);
+      &::after {
+        opacity: .22;
+      }
+    }
+  }
   &::after {
     transition: background-color .2s ease;
     position: absolute;
@@ -31,7 +43,7 @@
     color: #fff;
   }
   &:hover {
-    background-color: lighten($accent, 3%);
+    background-color: lighten($accent, 7%);
     &::after {
       opacity: .22;
     }

@@ -1,7 +1,7 @@
 <!-- FOOTER -->
 <div class="footer pb-4">
   <footer class="container">
-    <p class="float-right mt-2"><a href="#" class="company">Наверх</a></p>
+<!--    <p class="float-right mt-2"><a href="#" class="company">Наверх</a></p>-->
 
     <div class="row">
       <p class="col-sm-4 mt-2">&copy; 2017 - <?= strftime('%Y'); ?> <a href="/" class="company">Страхование online</a></p>

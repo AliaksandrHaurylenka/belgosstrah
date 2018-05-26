@@ -1,4 +1,4 @@
-<button class="button" data-toggle="modal" data-target="#modal_optima">Программа "Оптима"</button>
+<button class="button program" data-toggle="modal" data-target="#modal_optima">Программа "Оптима"</button>
 
 
 
@@ -45,8 +45,6 @@
         <p>Полис оформляется на основании устного заявления.</p>
 
         <p><strong>В любой стране мира мы заботимся о вас и всегда готовы оказать помощь в трудную минуту.</strong></p>
-
-        <?php $this->insert('blocks/form-tourism'); ?>
 
 
       </div><!--modal-body-->

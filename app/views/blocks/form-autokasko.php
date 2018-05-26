@@ -7,12 +7,11 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Программа "КАСКО-Оптима"</h4>
+        <h4 class="modal-title">Оставить заявку</h4>
       </div>
       <div class="modal-body">
 
-<h4>Оставить заявку</h4>
-<div class="col subtype">
+<div class="col">
   <div class="panel panel-success">
     <div class="panel-body">
 

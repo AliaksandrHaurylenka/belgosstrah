@@ -1,4 +1,4 @@
-<button class="button" data-toggle="modal" data-target="#modal_kasko-optima">Программа<br>"КАСКО-Оптима"</button>
+<button class="button program" data-toggle="modal" data-target="#modal_kasko-optima">Программа<br>"КАСКО-Оптима"</button>
 <!-- Модальное окно "Программа Стандарт" -->
 <!--noindex-->
 <div class="modal fade" id="modal_kasko-optima" tabindex="-1" role="dialog">
