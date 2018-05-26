@@ -59,7 +59,7 @@ if (isset($_POST['email'])) {
 //валидация поля message
 if (isset($_POST['message'])) {
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); // защита от XSS
-    if (!checkTextLength($message, 20, 500)) { // проверка на количество символов в тексте
+    if (!checkTextLength($message, 10, 500)) { // проверка на количество символов в тексте
         $data['message'] = 'Поле <b>Сообщение</b> содержит недопустимое количество символов';
         $data['result'] = 'error';
     }

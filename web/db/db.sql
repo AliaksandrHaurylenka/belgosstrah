@@ -1,12 +1,13 @@
 -- --------------------------------------------------------
 -- Хост:                         127.0.0.1
--- Версия сервера:               5.5.48 - MySQL Community Server (GPL)
--- ОС Сервера:                   Win32
--- HeidiSQL Версия:              9.3.0.4984
+-- Версия сервера:               5.6.38 - MySQL Community Server (GPL)
+-- Операционная система:         Win32
+-- HeidiSQL Версия:              9.5.0.5196
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
@@ -23,10 +24,9 @@ CREATE TABLE IF NOT EXISTS `menu` (
 -- Дамп данных таблицы insurance.menu: ~2 rows (приблизительно)
 /*!40000 ALTER TABLE `menu` DISABLE KEYS */;
 INSERT INTO `menu` (`id`, `name`, `link`, `attachment`, `name_en`) VALUES
-	(2, 'Стравита', '/link1', 'main', 'stravita'),
-	(3, 'Белросстрах', '/linl2', 'main', 'belrosstrah');
+	(2, 'Белросстрах', '/link1', 'main', 'belrosstrah'),
+	(3, 'Стравита', '/linl2', 'main', 'stravita');
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
-
 
 -- Дамп структуры для таблица insurance.menu-dropdown
 CREATE TABLE IF NOT EXISTS `menu-dropdown` (
@@ -51,7 +51,6 @@ INSERT INTO `menu-dropdown` (`id`, `name`, `link`, `attachment`) VALUES
 	(11, 'Пенсия+', '/pension_1', 'stravita');
 /*!40000 ALTER TABLE `menu-dropdown` ENABLE KEYS */;
 
-
 -- Дамп структуры для таблица insurance.slide
 CREATE TABLE IF NOT EXISTS `slide` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -67,6 +66,7 @@ INSERT INTO `slide` (`id`, `image`, `class`, `alt`) VALUES
 	(1, '2.jpg', 'active', ''),
 	(2, '4.jpg', '', '');
 /*!40000 ALTER TABLE `slide` ENABLE KEYS */;
+
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

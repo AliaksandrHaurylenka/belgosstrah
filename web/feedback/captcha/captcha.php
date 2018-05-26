@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
 }
 
 // присваиваем PHP переменной captchastring строку символов
-$captchastring = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz';
+$captchastring = 'ABCDEFGHIJKLMNPQRSTUVWXYZ123456789abcdefghijkmnopqrstuvwxyz';
 // получаем первые 6 символов после их перемешивания с помощью функции str_shuffle
 $captchastring = substr(str_shuffle($captchastring), 0, 6);
 // инициализируем переменной сессии с помощью сгенерированной подстроки captchastring,

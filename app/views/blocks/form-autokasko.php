@@ -24,7 +24,7 @@
             <div class="form-group has-feedback">
               <label class="control-label">Ф.И.О.</label>
               <input type="text" name="name" class="form-control"
-                     value="" minlength="2" required="required">
+                     value="Alex" minlength="2" required="required">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -37,7 +37,7 @@
               <label class="control-label">Марка машины</label>
               <input type="text" name="auto" required="required"
                      class="form-control"
-                     value="">
+                     value="BMW">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -48,7 +48,7 @@
               <label class="control-label">Год выпуска</label>
               <input type="number" name="year" required="required"
                      class="form-control"
-                     value="">
+                     value="2000">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -72,7 +72,7 @@
               <label class="control-label">Сумма страхования (стоимость авто)</label>
               <input type="number" name="sum" required="required"
                      class="form-control"
-                     value="">
+                     value="3000">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -85,7 +85,7 @@
               <label class="control-label">Возраст водителя</label>
               <input type="number" name="age" required="required"
                      class="form-control"
-                     value="">
+                     value="45">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -95,7 +95,7 @@
               <label class="control-label">Стаж водителя</label>
               <input type="text" name="age" required="required"
                      class="form-control"
-                     value="">
+                     value="12">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -118,7 +118,7 @@
               <label class="control-label">Телефон</label>
               <input type="text" name="phone" required="required"
                      class="form-control"
-                     value="">
+                     value="375293487688">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -128,7 +128,7 @@
               <label class="control-label">E-mail</label>
               <input type="email" name="email"
                      class="form-control"
-                     value="">
+                     value="goric0312@mail.ru">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -139,8 +139,7 @@
           <label class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
           <textarea name="message" class="form-control"
                     rows="5" minlength="10"
-                    maxlength="500">
-          </textarea>
+                    maxlength="500">Тестирование отправки сообщений</textarea>
         </div>
 
         <!-- Капча -->
@@ -176,6 +175,11 @@
 
       </form>
       <!--КОНЕЦ ФОРМЫ-->
+
+      <!-- Сообщение об успешной отправки формы -->
+      <div class="mt-3 alert alert-warning success-message d-none">
+        Сообщение успешно отправлено. Нажмите на <a class="show-form" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.
+      </div>
 
     </div><!--panel-body-->
   </div><!--panel panel-success-->

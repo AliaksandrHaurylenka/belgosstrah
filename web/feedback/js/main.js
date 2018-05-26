@@ -47,7 +47,7 @@ $(function(){
         var self=this;
         $(submitForm).parent().find('.show-form').click(function(e){
           e.preventDefault();
-          $(this).closest('.success-message').addClass('hidden');
+          $(this).closest('.success-message').addClass('d-none');
           if(self.disableAgreement){
             self.changeStateSubmit(false);
           }
@@ -228,7 +228,7 @@ $(function(){
           }
           if(_this.hideForm){
             submitForm.hide();
-            submitForm.parent().find('.success-message').removeClass('hidden');
+            submitForm.parent().find('.success-message').removeClass('d-none');
           }
         } else{
           _this.changeStateSubmit(false);
@@ -247,7 +247,7 @@ $(function(){
           }
 
           // если сервер вернул ответ error...
-          $.jGrowl('<strong>Ошибка!</strong><br>Форму не удалось отправить.', {
+          $.jGrowl('<strong>Ошибка!</strong><br>Сообщение не удалось отправить.', {
             theme: 'jgrowl-warning',
             life: 10000
           });
