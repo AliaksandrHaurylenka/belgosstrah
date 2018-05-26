@@ -1,40 +1,79 @@
-<table style="background-color: #f1f1f1; width:100%; align="
-       center" width="100%" border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-    <td align="center" style="vertical-align:top;padding:30px 0;text-align:center">
-        <table style="text-align:left; width:680px; margin:0 auto; font-size:14px; border-spacing:0px">
-            <tbody>
-            <tr>
-                <td bgcolor="#fff" style="padding: 15px;">
-                    <font color="#777" style="font-size:18px">%email.title%</font>
-                </td>
-            </tr>
-            <tr>
-                <td height="25"></td>
-            </tr>
-            <tr>
-                <td bgcolor="#fff" style="padding: 15px;">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            width: 50%;
+            margin-bottom: 1rem;
+            border-collapse: collapse;
+        }
+        .color {
+            background: #f0f0f0;
+        }
+        .name {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        td {
+            padding-left: .5rem;
+            border: #e9e9e9 1px solid;
+        }
 
-                    Пользователь <b>%email.nameuser%</b> оставил следующее сообщение:<br>
-                    %email.message%
-                    <hr>
-                    Email пользователя: <b>%email.emailuser%</b><br>
-                    Дата отправки: <b>%email.date%</b>
+    </style>
+</head>
+<body>
+<h2>%email.title%</h2>
+<table>
+    <tbody>
+    <tr class="name">
+        <td  colspan="4"><b>%email.nameuser%</b></td>
+    </tr>
 
-                </td>
-            </tr>
-            <tr>
-                <td height="25"></td>
-            </tr>
-            <tr>
-                <td bgcolor="#fff" style="padding: 20px 15px; color: #777; font-size: 14px;">
-                    <p>&copy; Страхование online</p>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </td>
-</tr>
-</tbody>
+    <tr>
+        <td class="color"><h3>Марка машины:</h3></td>
+        <td><b>%email.auto%</b></td>
+        <td class="color"><h3>Год выпуска:</h3></td>
+        <td><b>%email.year%</b></td>
+    </tr>
+
+    <tr>
+        <td class="color"><h3>Возраст водителя:</h3></td>
+        <td><b>%email.age%</b></td>
+        <td class="color"><h3>Стаж вождения:</h3></td>
+        <td><b>%email.driving_experience%</b></td>
+    </tr>
+
+    <tr>
+        <td colspan="1" class="color"><h3>С выездом за границу:</h3></td>
+        <td colspan="3">%email.abroad%</td>
+    </tr>
+
+    <tr>
+        <td class="color"><h3>Вид страховки:</h3></td>
+        <td><b>%email.type%</b></td>
+        <td class="color"><h3>Сумма страхования:</h3></td>
+        <td><b>%email.sum%</b></td>
+    </tr>
+
+
+    <tr>
+        <td class="color"><h3>Моб. телефон:</h3></td>
+        <td><b>%email.phone%</b></td>
+        <td class="color"><h3>Email:</h3></td>
+        <td><b>%email.emailuser%</b></td>
+    </tr>
+
+    <tr>
+        <td colspan="1" class="color"><h3>Сообщение:</h3></td>
+        <td colspan="3">%email.message%</td>
+    </tr>
+
+    <tr>
+        <td colspan="4" class="name"><h3>Дата отправки: </h3><p>%email.date%<p></td>
+    </tr>
+    </tbody>
 </table>
+</body>
+</html>

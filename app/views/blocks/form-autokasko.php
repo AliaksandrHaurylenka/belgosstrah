@@ -58,7 +58,7 @@
           <div class="col-sm-6">
             <div class="form-group has-feedback">
               <label class="control-label">Вид страховки</label>
-              <select class="form-control">
+              <select class="form-control" name="type">
                 <option>КАСКО-Оптима</option>
                 <option>Личная защита</option>
                 <option>КАСКО-Автопрофи</option>
@@ -92,8 +92,8 @@
           <div class="col-sm-6">
             <!-- Сумма страхования -->
             <div class="form-group has-feedback">
-              <label class="control-label">Стаж водителя</label>
-              <input type="text" name="age" required="required"
+              <label class="control-label">Стаж вождения</label>
+              <input type="text" name="driving_experience" required="required"
                      class="form-control"
                      value="12">
               <span class="glyphicon form-control-feedback"></span>
@@ -105,7 +105,7 @@
           <div class="col-sm-4">
             <div class="form-group has-feedback">
               <label class="control-label">С выездом за границу?</label>
-              <select class="form-control">
+              <select class="form-control" name="abroad">
                 <option>Нет</option>
                 <option>Да</option>
               </select>
@@ -115,10 +115,12 @@
           <div class="col-sm-4">
             <!-- Спортивные интересы -->
             <div class="form-group has-feedback">
-              <label class="control-label">Телефон</label>
-              <input type="text" name="phone" required="required"
+              <label class="control-label">Моб. телефон</label>
+              <input type="tel" name="phone" required="required"
                      class="form-control"
-                     value="375293487688">
+                     placeholder="+7 (900) 123-45-67"
+                     pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                     value="+7 (900) 123-45-67">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -178,7 +180,7 @@
 
       <!-- Сообщение об успешной отправки формы -->
       <div class="mt-3 alert alert-warning success-message d-none">
-        Сообщение успешно отправлено. Нажмите на <a class="show-form" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.
+        Сообщение успешно отправлено.
       </div>
 
     </div><!--panel-body-->
