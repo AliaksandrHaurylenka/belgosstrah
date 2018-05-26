@@ -4,7 +4,7 @@
 * и раскомментировать define
 */
 // стартовый путь ('http://mydomain.ru/')
-// почта, с которой посылается письмо
+// почта, с которой посылается письмо,
 // должна содержать доменное имя сайта, напр. mail@sport-kostukovka.by
 $startPath = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST'] . '/';
 
@@ -33,7 +33,7 @@ define('MAIL_SUBJECT', 'Сообщение с сайта Костюковка-С
 
 // кому необходимо отправить письмо
 //const MAIL_ADDRESS = 'aliaksandr.haurylenka@gmail.com';
-$bcc = ['mail@sport-kostukovka.by', 'aliaksandr.haurylenka@gmail.com', 'kostukovka-sport@sport-kostukovka.by', 'sdyuschor@yandex.ru'];// для массовой рассылки
+$bcc = ['aliaksandr.haurylenka@gmail.com'];// для массовой рассылки
 
 // настройки mail для информирования пользователя о доставке сообщения
 //const MAIL_SUBJECT_CLIENT = 'Ваше сообщение доставлено';

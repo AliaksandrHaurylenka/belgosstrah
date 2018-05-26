@@ -1,4 +1,4 @@
-<button class="button" data-toggle="modal" data-target="#modal_kasko-optima">Программа "КАСКО-Оптима"</button>
+<button class="button" data-toggle="modal" data-target="#modal_kasko-optima">Программа<br>"КАСКО-Оптима"</button>
 <!-- Модальное окно "Программа Стандарт" -->
 <!--noindex-->
 <div class="modal fade" id="modal_kasko-optima" tabindex="-1" role="dialog">
@@ -33,7 +33,7 @@
           <li>повреждения автомобиля животными, насекомыми.</li>
         </ul>
       </div><!--modal-body-->
-      <div class="modal-footer"><button class="button" id="optima">Click</button></div>
+<!--      <div class="modal-footer"><button class="button" id="optima">Click</button></div>-->
     </div>
   </div>
 </div>

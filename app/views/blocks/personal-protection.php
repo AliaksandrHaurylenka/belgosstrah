@@ -1,4 +1,4 @@
-<button class="button" data-toggle="modal" data-target="#modal_personal-protection">Программа "Личная защита"</button>
+<button class="button" data-toggle="modal" data-target="#modal_personal-protection">Программа<br>"Личная защита"</button>
 
 <!-- Модальное окно "Программа Стандарт" -->
 <!--noindex-->

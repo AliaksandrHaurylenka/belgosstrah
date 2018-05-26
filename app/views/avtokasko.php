@@ -57,10 +57,10 @@
       </div>
     </div>
 
-    <!--<button class="button" data-toggle="modal" data-target="#modal">Застраховаться</button>
-    <?php /*$this->insert('blocks/form-autokasko'); */?>
+    <button class="button" data-toggle="modal" data-target="#modal">Застраховаться</button>
+    <?php $this->insert('blocks/form-autokasko'); ?>
 
-    <button class="button" id="optima">Click</button>-->
+<!--    <button class="button" id="optima">Click</button>-->
   </section>
 
 

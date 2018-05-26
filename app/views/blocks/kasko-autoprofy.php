@@ -1,4 +1,4 @@
-<button class="button" data-toggle="modal" data-target="#modal_kasko-autoprofy">Программа "КАСКО-Автопрофи"</button>
+<button class="button" data-toggle="modal" data-target="#modal_kasko-autoprofy">Программа<br>"КАСКО-Автопрофи"</button>
 
 <!-- Модальное окно "Программа Стандарт" -->
 <!--noindex-->
