@@ -33,7 +33,7 @@ function generatePassword($length=20)
             <div class="panel-body">
 
               <!-- Форма обратной связи -->
-              <form id="feedbackForm" action="/feedback/process/process.php" enctype="multipart/form-data" novalidate>
+              <form id="feedbackForm" action="/feedback/process/email.php" enctype="multipart/form-data" novalidate>
                 <div class="row">
                   <div class="col-sm-6">
 
@@ -103,8 +103,7 @@ function generatePassword($length=20)
 
               <!-- Сообщение об успешной отправки формы -->
               <div class="alert alert-warning success-message d-none">
-                Ваше сообщение успешно отправлено. Нажмите на <a class="show-form" href="#">ссылку</a>, чтобы отправить
-                ещё одно сообщение.
+                Ваше сообщение успешно отправлено.
               </div>
 
             </div>
