@@ -16,7 +16,7 @@
     <div class="panel-body">
 
       <!-- Форма обратной связи -->
-      <form id="feedbackForm" action="/feedback/process/process.php" enctype="multipart/form-data" novalidate>
+      <form id="feedbackForm" action="/feedback/process/autokasko.php" enctype="multipart/form-data" novalidate>
         <div class="row">
           <div class="col">
             <!-- Имя пользователя -->
@@ -117,8 +117,8 @@
               <label for="phone" class="control-label">Моб. телефон</label>
               <input id="phone" type="tel" name="phone" required="required"
                      class="form-control"
-                     placeholder="+7 (900) 123-45-67"
-                     pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                     placeholder="+375 (29) 123-45-67"
+                     pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>

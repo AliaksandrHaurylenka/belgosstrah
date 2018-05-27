@@ -9,7 +9,7 @@ session_start();
 // переменная, хранящая основной статус обработки формы
 $data['result'] = 'success';
 
-// функция для проверки количество символов в тексте
+// функция для проверки количества символов в тексте
 function checkTextLength($text, $minLength, $maxLength)
 {
   $result = false;
@@ -29,12 +29,39 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
   exit();
 }
 
+
+$name = filter_var($_POST['name'], FILTER_SANITIZE_STRING); // защита от XSS
+$sport = filter_var($_POST['sport'], FILTER_SANITIZE_STRING);
+$type = filter_var($_POST['type'], FILTER_SANITIZE_STRING);
+$phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+$age = filter_var($_POST['age'], FILTER_SANITIZE_STRING);
+$sex = filter_var($_POST['sex'], FILTER_SANITIZE_STRING);
+$work = filter_var($_POST['work'], FILTER_SANITIZE_STRING);
+
+
 // валидация формы
+function validate($input, $name, $min, $max, $nameInput){
+  if (isset($_POST[$input])) {
+    if (!checkTextLength($name, $min, $max)) { // проверка на количество символов в тексте
+      $data[$input] = 'Поле <b>' + $nameInput + '</b> содержит недопустимое количество символов';
+      $data['result'] = 'error';
+    }
+  } else {
+    $data[$input] = "Поле <b>" + $nameInput + "</b> не заполнено";
+    $data['result'] = 'error';
+  }
+  return $data;
+}
+
+//validate('name', $name, 2, 30, 'Имя');
+
+
+
 
 // валидация поля name
 if (isset($_POST['name'])) {
-  $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($name, 2, 30)) { // проверка на количество символов в тексте
+  if (!checkTextLength($name, 2, 30)) {
     $data['name'] = 'Поле <b>Имя</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
@@ -43,32 +70,39 @@ if (isset($_POST['name'])) {
   $data['result'] = 'error';
 }
 
-//валидация Марка машины
-if (isset($_POST['auto'])) {
-  $auto = filter_var($_POST['auto'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($auto, 2, 30)) { // проверка на количество символов в тексте
-    $data['auto'] = 'Поле <b>Марка машины</b> содержит недопустимое количество символов';
+//валидация Возраст
+if (isset($_POST['age'])) {
+  if (!checkTextLength($age, 2, 20)) { // проверка на количество символов в тексте
+    $data['age'] = 'Поле <b>Возраст</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
 } else {
-  $data['auto'] = 'Поле <b>Марка машины</b> не заполнено';
+  $data['age'] = 'Поле <b>Возраст</b> не заполнено';
   $data['result'] = 'error';
 }
 
-//валидация Год выпуска
-if (isset($_POST['year'])) {
-  $year = filter_var($_POST['year'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($year, 4, 20)) { // проверка на количество символов в тексте
-    $data['year'] = 'Поле <b>Год выпуска</b> содержит недопустимое количество символов';
+
+//валидация Работа
+if (isset($_POST['work'])) {
+  if (!checkTextLength($work, 2, 20)) { // проверка на количество символов в тексте
+    $data['work'] = 'Поле <b>Работа</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
 } else {
-  $data['year'] = 'Поле <b>Год выпуска</b> не заполнено';
+  $data['work'] = 'Поле <b>Работа</b> не заполнено';
   $data['result'] = 'error';
 }
 
-$type = filter_var($_POST['type'], FILTER_SANITIZE_STRING);
-$abroad = filter_var($_POST['abroad'], FILTER_SANITIZE_STRING);
+// валидация поля Спорт
+if (isset($_POST['sport'])) {
+  if (!checkTextLength($sport, 2, 20)) {
+    $data['sport'] = 'Поле <b>Занятия спортом</b> содержит недопустимое количество символов';
+    $data['result'] = 'error';
+  }
+} else {
+  $data['sport'] = 'Поле <b>Занятия спортом</b> не заполнено';
+  $data['result'] = 'error';
+}
 
 //валидация Сумма страховки
 if (isset($_POST['sum'])) {
@@ -82,33 +116,10 @@ if (isset($_POST['sum'])) {
   $data['result'] = 'error';
 }
 
-//валидация Возраст водителя
-if (isset($_POST['age'])) {
-  $age = filter_var($_POST['age'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($age, 2, 20)) { // проверка на количество символов в тексте
-    $data['age'] = 'Поле <b>Возраст водителя</b> содержит недопустимое количество символов';
-    $data['result'] = 'error';
-  }
-} else {
-  $data['age'] = 'Поле <b>Возраст водителя</b> не заполнено';
-  $data['result'] = 'error';
-}
 
-//валидация Стаж вождения
-if (isset($_POST['driving_experience'])) {
-  $driving_experience = filter_var($_POST['driving_experience'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($driving_experience, 2, 20)) { // проверка на количество символов в тексте
-    $data['driving_experience'] = 'Поле <b>Стаж вождения</b> содержит недопустимое количество символов';
-    $data['result'] = 'error';
-  }
-} else {
-  $data['driving_experience'] = 'Поле <b>Стаж вождения</b> не заполнено';
-  $data['result'] = 'error';
-}
 
 //валидация Мобильный телефон
 if (isset($_POST['phone'])) {
-  $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING); // защита от XSS
   if (!checkTextLength($phone, 6, 20)) { // проверка на количество символов в тексте
     $data['phone'] = 'Поле <b>Мобильный телефон</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
@@ -132,17 +143,6 @@ if (isset($_POST['email'])) {
   $data['result'] = 'error';
 }
 
-//валидация поля message
-if (isset($_POST['message'])) {
-  $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($message, 10, 500)) { // проверка на количество символов в тексте
-    $data['message'] = 'Поле <b>Сообщение</b> содержит недопустимое количество символов';
-    $data['result'] = 'error';
-  }
-} else {
-  $data['message'] = 'Поле <b>Сообщение</b> не заполнено';
-  $data['result'] = 'error';
-}
 
 //валидация капчи
 if (isset($_POST['captcha']) && isset($_SESSION['captcha'])) {
@@ -216,7 +216,7 @@ if ($data['result'] == 'success') {
   require_once('../phpmailer/PHPMailerAutoload.php');
 
   //формируем тело письма
-  $bodyMail = file_get_contents('email.tpl'); // получаем содержимое email шаблона
+  $bodyMail = file_get_contents('stravita.tpl'); // получаем содержимое email шаблона
 
   // добавление файлов в виде ссылок
   if (isset($attachments)) {
@@ -235,17 +235,16 @@ if ($data['result'] == 'success') {
   // выполняем замену плейсхолдеров реальными значениями
   $bodyMail = str_replace('%email.title%', MAIL_SUBJECT, $bodyMail);
   $bodyMail = str_replace('%email.nameuser%', isset($name) ? $name : '-', $bodyMail);
-  $bodyMail = str_replace('%email.auto%', isset($auto) ? $auto : '-', $bodyMail);
-  $bodyMail = str_replace('%email.year%', isset($year) ? $year : '-', $bodyMail);
   $bodyMail = str_replace('%email.type%', isset($type) ? $type : '-', $bodyMail);
   $bodyMail = str_replace('%email.sum%', isset($sum) ? $sum : '-', $bodyMail);
-  $bodyMail = str_replace('%email.age%', isset($age) ? $age : '-', $bodyMail);
-  $bodyMail = str_replace('%email.driving_experience%', isset($driving_experience) ? $driving_experience : '-', $bodyMail);
-  $bodyMail = str_replace('%email.abroad%', isset($abroad) ? $abroad : '-', $bodyMail);
+  $bodyMail = str_replace('%email.sport%', isset($sport) ? $sport : '-', $bodyMail);
   $bodyMail = str_replace('%email.message%', isset($message) ? $message : '-', $bodyMail);
   $bodyMail = str_replace('%email.emailuser%', isset($email) ? $email : '-', $bodyMail);
   $bodyMail = str_replace('%email.phone%', isset($phone) ? $phone : '-', $bodyMail);
   $bodyMail = str_replace('%email.date%', date('d.m.Y H:i'), $bodyMail);
+  $bodyMail = str_replace('%email.age%', isset($age) ? $age : '-', $bodyMail);
+  $bodyMail = str_replace('%email.sex%', isset($sex) ? $sex : '-', $bodyMail);
+  $bodyMail = str_replace('%email.work%', isset($work) ? $work : '-', $bodyMail);
 
   // отправляем письмо с помощью PHPMailer
   $mail = new PHPMailer;
