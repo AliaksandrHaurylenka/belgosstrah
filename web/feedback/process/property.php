@@ -9,7 +9,7 @@ session_start();
 // переменная, хранящая основной статус обработки формы
 $data['result'] = 'success';
 
-// функция для проверки количество символов в тексте
+// функция для проверки количества символов в тексте
 function checkTextLength($text, $minLength, $maxLength)
 {
   $result = false;
@@ -31,13 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 
 $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING); // защита от XSS
-$number = filter_var($_POST['number'], FILTER_SANITIZE_STRING);
-$children = filter_var($_POST['children'], FILTER_SANITIZE_STRING);
-$city = filter_var($_POST['city'], FILTER_SANITIZE_STRING);
-$date1 = filter_var($_POST['date1'], FILTER_SANITIZE_STRING);
-$date2 = filter_var($_POST['date2'], FILTER_SANITIZE_STRING);
-$sport = filter_var($_POST['sport'], FILTER_SANITIZE_STRING);
-$type = filter_var($_POST['type'], FILTER_SANITIZE_STRING);
+$housing = filter_var($_POST['housing'], FILTER_SANITIZE_STRING);
+$phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+$room = filter_var($_POST['room'], FILTER_SANITIZE_STRING);
+$price = filter_var($_POST['price'], FILTER_SANITIZE_STRING);
 $sum = filter_var($_POST['sum'], FILTER_SANITIZE_STRING); // защита от XSS
 
 
@@ -71,54 +69,32 @@ if (isset($_POST['name'])) {
   $data['result'] = 'error';
 }
 
-// валидация поля Количество человек
-if (isset($_POST['number'])) {
-  if (!checkTextLength($number, 1, 20)) {
-    $data['number'] = 'Поле <b>Количество человек</b> содержит недопустимое количество символов';
+//валидация Количество этажей
+if (isset($_POST['room'])) {
+  if (!checkTextLength($room, 1, 20)) { // проверка на количество символов в тексте
+    $data['room'] = 'Поле <b>Количество этажей</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
 } else {
-  $data['number'] = 'Поле <b>Количество человек</b> не заполнено';
-  $data['result'] = 'error';
-}
-
-// валидация поля Количество детей
-if (isset($_POST['number'])) {
-  if (!checkTextLength($number, 1, 20)) {
-    $data['number'] = 'Поле <b>Количество детей</b> содержит недопустимое количество символов';
-    $data['result'] = 'error';
-  }
-} else {
-  $data['number'] = 'Поле <b>Количество детей</b> не заполнено';
+  $data['room'] = 'Поле <b>Количество этажей</b> не заполнено';
   $data['result'] = 'error';
 }
 
 
-// валидация поля Пункт назначения
-if (isset($_POST['city'])) {
-  if (!checkTextLength($city, 2, 20)) {
-    $data['city'] = 'Поле <b>Пункт назначения</b> содержит недопустимое количество символов';
+// валидация Стоимость жилья
+if (isset($_POST['price'])) {
+  if (!checkTextLength($price, 2, 20)) {
+    $data['price'] = 'Поле <b>Стоимость жилья</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
 } else {
-  $data['city'] = 'Поле <b>Пункт назначения</b> не заполнено';
-  $data['result'] = 'error';
-}
-
-
-// валидация поля Спорт
-if (isset($_POST['sport'])) {
-  if (!checkTextLength($city, 2, 20)) {
-    $data['sport'] = 'Поле <b>Занятия спортом</b> содержит недопустимое количество символов';
-    $data['result'] = 'error';
-  }
-} else {
-  $data['sport'] = 'Поле <b>Занятия спортом</b> не заполнено';
+  $data['price'] = 'Поле <b>Стоимость жилья</b> не заполнено';
   $data['result'] = 'error';
 }
 
 //валидация Сумма страховки
 if (isset($_POST['sum'])) {
+  $sum = filter_var($_POST['sum'], FILTER_SANITIZE_STRING); // защита от XSS
   if (!checkTextLength($sum, 4, 20)) { // проверка на количество символов в тексте
     $data['sum'] = 'Поле <b>Сумма страховки</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
@@ -132,7 +108,6 @@ if (isset($_POST['sum'])) {
 
 //валидация Мобильный телефон
 if (isset($_POST['phone'])) {
-  $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING); // защита от XSS
   if (!checkTextLength($phone, 6, 20)) { // проверка на количество символов в тексте
     $data['phone'] = 'Поле <b>Мобильный телефон</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
@@ -229,7 +204,7 @@ if ($data['result'] == 'success') {
   require_once('../phpmailer/PHPMailerAutoload.php');
 
   //формируем тело письма
-  $bodyMail = file_get_contents('tourism.tpl'); // получаем содержимое email шаблона
+  $bodyMail = file_get_contents('property.tpl'); // получаем содержимое email шаблона
 
   // добавление файлов в виде ссылок
   if (isset($attachments)) {
@@ -248,18 +223,14 @@ if ($data['result'] == 'success') {
   // выполняем замену плейсхолдеров реальными значениями
   $bodyMail = str_replace('%email.title%', MAIL_SUBJECT, $bodyMail);
   $bodyMail = str_replace('%email.nameuser%', isset($name) ? $name : '-', $bodyMail);
-  $bodyMail = str_replace('%email.number%', isset($number) ? $number : '-', $bodyMail);
-  $bodyMail = str_replace('%email.children%', isset($children) ? $children : '-', $bodyMail);
-  $bodyMail = str_replace('%email.city%', isset($city) ? $city : '-', $bodyMail);
-  $bodyMail = str_replace('%email.date1%', isset($date1) ? $date1 : '-', $bodyMail);
-  $bodyMail = str_replace('%email.date2%', isset($date2) ? $date2 : '-', $bodyMail);
-  $bodyMail = str_replace('%email.type%', isset($type) ? $type : '-', $bodyMail);
+  $bodyMail = str_replace('%email.housing%', isset($housing) ? $housing : '-', $bodyMail);
   $bodyMail = str_replace('%email.sum%', isset($sum) ? $sum : '-', $bodyMail);
-  $bodyMail = str_replace('%email.sport%', isset($sport) ? $sport : '-', $bodyMail);
   $bodyMail = str_replace('%email.message%', isset($message) ? $message : '-', $bodyMail);
   $bodyMail = str_replace('%email.emailuser%', isset($email) ? $email : '-', $bodyMail);
   $bodyMail = str_replace('%email.phone%', isset($phone) ? $phone : '-', $bodyMail);
   $bodyMail = str_replace('%email.date%', date('d.m.Y H:i'), $bodyMail);
+  $bodyMail = str_replace('%email.price%', isset($price) ? $price : '-', $bodyMail);
+  $bodyMail = str_replace('%email.room%', isset($room) ? $room : '-', $bodyMail);
 
   // отправляем письмо с помощью PHPMailer
   $mail = new PHPMailer;

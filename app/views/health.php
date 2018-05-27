@@ -41,6 +41,12 @@
       <li>смерть.</li>
     </ul>
 
+    <div class="">
+      <button class="button" data-toggle="modal" data-target="#modal_feedback">Застраховаться</button>
+    </div>
+
+    <?php $this->insert('blocks/form-stravita'); ?>
+
   </section>
 
 
