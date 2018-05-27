@@ -5,7 +5,7 @@
     <title>Document</title>
     <style>
         table {
-            width: 50%;
+            width: 70%;
             margin-bottom: 1rem;
             border-collapse: collapse;
         }

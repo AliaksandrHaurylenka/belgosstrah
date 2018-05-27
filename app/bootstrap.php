@@ -41,13 +41,10 @@ $dispatcher=FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
   $r->get('/life_2', ['App\Controllers\HomeController', 'life_2']);
   $r->get('/pension_1', ['App\Controllers\HomeController', 'pension_1']);
   $r->get('/pension_2', ['App\Controllers\HomeController', 'pension_2']);
-  $r->get('/avtokasko', ['App\Controllers\HomeController', 'avtokasko']);
+  $r->get('/autokasko', ['App\Controllers\HomeController', 'autokasko']);
   $r->get('/property', ['App\Controllers\HomeController', 'property']);
   $r->get('/tourism', ['App\Controllers\HomeController', 'tourism']);
   $r->get('/health', ['App\Controllers\HomeController', 'health']);
-
-
-  $r->post('/program', ['App\Controllers\ProgramController', 'name_program']);
 });
 
 // Fetch method and URI from somewhere

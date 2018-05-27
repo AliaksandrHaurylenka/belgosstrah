@@ -21,9 +21,9 @@
           <div class="col">
             <!-- Имя пользователя -->
             <div class="form-group has-feedback">
-              <label class="control-label">Ф.И.О.</label>
-              <input type="text" name="name" class="form-control"
-                     value="Alex" minlength="2" required="required">
+              <label for="name" class="control-label">Ф.И.О.</label>
+              <input id="name" type="text" name="name" class="form-control"
+                     value="" minlength="2" required="required">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -33,10 +33,10 @@
           <div class="col-sm-6">
             <!-- Возраст -->
             <div class="form-group has-feedback">
-              <label class="control-label">Марка машины</label>
-              <input type="text" name="auto" required="required"
+              <label for="auto" class="control-label">Марка машины</label>
+              <input id="auto" type="text" name="auto" required="required"
                      class="form-control"
-                     value="BMW">
+                     value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -44,10 +44,33 @@
           <div class="col-sm-6">
             <!-- Пол страхуемого -->
             <div class="form-group has-feedback">
-              <label class="control-label">Год выпуска</label>
-              <input type="number" name="year" required="required"
+              <label for="year" class="control-label">Год выпуска</label>
+              <input id="year" type="text" name="year" required="required"
                      class="form-control"
-                     value="2000">
+                     value="">
+              <span class="glyphicon form-control-feedback"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- Возраст водителя -->
+            <div class="form-group has-feedback">
+              <label for="age" class="control-label">Возраст водителя</label>
+              <input id="age" type="text" name="age" required="required"
+                     class="form-control"
+                     value="">
+              <span class="glyphicon form-control-feedback"></span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <!-- Сумма страхования -->
+            <div class="form-group has-feedback">
+              <label for="driving_experience" class="control-label">Стаж вождения</label>
+              <input id="driving_experience" type="text" name="driving_experience" required="required"
+                     class="form-control"
+                     value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -56,8 +79,8 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group has-feedback">
-              <label class="control-label">Вид страховки</label>
-              <select class="form-control" name="type">
+              <label for="type" class="control-label">Вид страховки</label>
+              <select id="type" class="form-control" name="type">
                 <option>КАСКО-Оптима</option>
                 <option>Личная защита</option>
                 <option>КАСКО-Автопрофи</option>
@@ -68,33 +91,10 @@
           <div class="col-sm-6">
             <!-- Работа -->
             <div class="form-group has-feedback">
-              <label class="control-label">Сумма страхования (стоимость авто)</label>
-              <input type="number" name="sum" required="required"
+              <label for="sum" class="control-label">Сумма страхования (стоимость авто)</label>
+              <input id="sum" type="text" name="sum" required="required"
                      class="form-control"
-                     value="3000">
-              <span class="glyphicon form-control-feedback"></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-6">
-            <!-- Спортивные интересы -->
-            <div class="form-group has-feedback">
-              <label class="control-label">Возраст водителя</label>
-              <input type="number" name="age" required="required"
-                     class="form-control"
-                     value="45">
-              <span class="glyphicon form-control-feedback"></span>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <!-- Сумма страхования -->
-            <div class="form-group has-feedback">
-              <label class="control-label">Стаж вождения</label>
-              <input type="text" name="driving_experience" required="required"
-                     class="form-control"
-                     value="12">
+                     value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -103,8 +103,8 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="form-group has-feedback">
-              <label class="control-label">С выездом за границу?</label>
-              <select class="form-control" name="abroad">
+              <label for="abroad" class="control-label">С выездом за границу?</label>
+              <select id="abroad" class="form-control" name="abroad">
                 <option>Нет</option>
                 <option>Да</option>
               </select>
@@ -112,24 +112,24 @@
             </div>
           </div>
           <div class="col-sm-4">
-            <!-- Спортивные интересы -->
+            <!-- Мобильный телефон -->
             <div class="form-group has-feedback">
-              <label class="control-label">Моб. телефон</label>
-              <input type="tel" name="phone" required="required"
+              <label for="phone" class="control-label">Моб. телефон</label>
+              <input id="phone" type="tel" name="phone" required="required"
                      class="form-control"
                      placeholder="+7 (900) 123-45-67"
                      pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                     value="+7 (900) 123-45-67">
+                     value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
           <div class="col-sm-4">
             <!-- E-mail -->
             <div class="form-group has-feedback">
-              <label class="control-label">E-mail</label>
-              <input type="email" name="email"
+              <label for="email" class="control-label">E-mail</label>
+              <input id="email" type="email" name="email"
                      class="form-control"
-                     value="goric0312@mail.ru">
+                     value="">
               <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
@@ -137,10 +137,10 @@
 
         <!-- Сообщение пользователя -->
         <div class="form-group has-feedback">
-          <label class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
-          <textarea name="message" class="form-control"
+          <label for="message" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
+          <textarea id="message" name="message" class="form-control"
                     rows="5" minlength="10"
-                    maxlength="500">Тестирование отправки сообщений</textarea>
+                    maxlength="500"></textarea>
         </div>
 
         <!-- Капча -->

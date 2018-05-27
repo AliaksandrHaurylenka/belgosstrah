@@ -19,7 +19,7 @@
         <p class="card-text">Страхование транспортного средства в страховой компании «Белросстрах» по АВТОКАСКО...</p>
       </div>
       <div class="card-footer">
-        <p><a class="btn btn-secondary" href="/avtokasko" role="button">Подробнее &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="/autokasko" role="button">Подробнее &raquo;</a></p>
       </div>
     </div>
 

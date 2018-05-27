@@ -58,7 +58,7 @@ if (isset($_POST['auto'])) {
 //валидация Год выпуска
 if (isset($_POST['year'])) {
   $year = filter_var($_POST['year'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($year, 4, 4)) { // проверка на количество символов в тексте
+  if (!checkTextLength($year, 4, 20)) { // проверка на количество символов в тексте
     $data['year'] = 'Поле <b>Год выпуска</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
@@ -73,7 +73,7 @@ $abroad = filter_var($_POST['abroad'], FILTER_SANITIZE_STRING);
 //валидация Сумма страховки
 if (isset($_POST['sum'])) {
   $sum = filter_var($_POST['sum'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($sum, 4, 6)) { // проверка на количество символов в тексте
+  if (!checkTextLength($sum, 4, 20)) { // проверка на количество символов в тексте
     $data['sum'] = 'Поле <b>Сумма страховки</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
@@ -85,7 +85,7 @@ if (isset($_POST['sum'])) {
 //валидация Возраст водителя
 if (isset($_POST['age'])) {
   $age = filter_var($_POST['age'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($age, 2, 2)) { // проверка на количество символов в тексте
+  if (!checkTextLength($age, 2, 20)) { // проверка на количество символов в тексте
     $data['age'] = 'Поле <b>Возраст водителя</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
@@ -97,7 +97,7 @@ if (isset($_POST['age'])) {
 //валидация Стаж вождения
 if (isset($_POST['driving_experience'])) {
   $driving_experience = filter_var($_POST['driving_experience'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($driving_experience, 2, 2)) { // проверка на количество символов в тексте
+  if (!checkTextLength($driving_experience, 2, 20)) { // проверка на количество символов в тексте
     $data['driving_experience'] = 'Поле <b>Стаж вождения</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }

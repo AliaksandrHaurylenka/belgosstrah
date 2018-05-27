@@ -73,7 +73,7 @@ if (isset($_POST['name'])) {
 
 // валидация поля Количество человек
 if (isset($_POST['number'])) {
-  if (!checkTextLength($number, 1, 2)) {
+  if (!checkTextLength($number, 1, 20)) {
     $data['number'] = 'Поле <b>Количество человек</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
@@ -84,7 +84,7 @@ if (isset($_POST['number'])) {
 
 // валидация поля Количество детей
 if (isset($_POST['number'])) {
-  if (!checkTextLength($number, 1, 2)) {
+  if (!checkTextLength($number, 1, 20)) {
     $data['number'] = 'Поле <b>Количество детей</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
@@ -120,7 +120,7 @@ if (isset($_POST['sport'])) {
 //валидация Сумма страховки
 if (isset($_POST['sum'])) {
   $sum = filter_var($_POST['sum'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($sum, 4, 6)) { // проверка на количество символов в тексте
+  if (!checkTextLength($sum, 4, 20)) { // проверка на количество символов в тексте
     $data['sum'] = 'Поле <b>Сумма страховки</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }

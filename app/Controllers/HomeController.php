@@ -61,12 +61,9 @@ class HomeController {
     echo $this->views->render('pension_2');
   }
 
-  function avtokasko()
+  function autokasko()
   {
-    $optima = $this->database->getOne('program', 'program_en', 'optima');
-    $autoprofy = $this->database->getOne('program', 'program_en', 'autoprofy');
-    $personal = $this->database->getOne('program', 'program_en', 'personal');
-    echo $this->views->render('avtokasko', compact('optima', 'autoprofy', 'personal'));
+    echo $this->views->render('autokasko');
   }
 
   function property()
