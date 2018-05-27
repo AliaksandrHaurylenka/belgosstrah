@@ -8,7 +8,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand" href="/">Страхование online</a>
+    <a class="navbar-brand" href="/">Страховка online</a>
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">

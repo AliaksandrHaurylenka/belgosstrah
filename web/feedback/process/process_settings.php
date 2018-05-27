@@ -21,19 +21,19 @@ $allowedExtensions = array('gif', 'jpg', 'png');
 // от какого email будет отправляться письмо
 // const MAIL_FROM = 'mail@sport-kostukovka.by';
 //const MAIL_FROM = 'goric0312@mail.ru';
-define('MAIL_FROM', 'mail@sport-kostukovka.by');
+define('MAIL_FROM', 'mail@a0196439.xsph.ru');
 
 // от какого имени будет отправляться письмо
 //const MAIL_FROM_NAME = 'Имя_сайта';
-define('MAIL_FROM_NAME', 'Костюковка-Спорт');
+define('MAIL_FROM_NAME', 'Страховка online');
 
 // тема письма
 //const MAIL_SUBJECT = 'Сообщение с формы обратной связи';
-define('MAIL_SUBJECT', 'Сообщение с сайта Костюковка-Спорт');
+define('MAIL_SUBJECT', 'Сообщение с сайта Страховка online');
 
 // кому необходимо отправить письмо
 //const MAIL_ADDRESS = 'aliaksandr.haurylenka@gmail.com';
-$bcc = ['aliaksandr.haurylenka@gmail.com'];// для массовой рассылки
+$bcc = ['aliaksandr.haurylenka@gmail.com', 'tasha_rub@mail.ru'];// для массовой рассылки
 
 // настройки mail для информирования пользователя о доставке сообщения
 //const MAIL_SUBJECT_CLIENT = 'Ваше сообщение доставлено';
