@@ -22,17 +22,17 @@ $(function(){
   });
 
   $('.calc').popover({
-    placement: pos,
+    placement: 'left',
     trigger: trig,
-    title: 'Online калькулятор',
-    content: "And here's some amazing content. It's very engaging. Right?"
+    title: 'Страховой калькулятор',
+    // content: "Рассчитать стоимость страховых услуг."
   });
 
   $('.feedback').popover({
-    placement: pos,
+    placement: 'right',
     trigger: trig,
     title: 'Обратная связь',
-    content: "And here's some amazing content. It's very engaging. Right?"
+    // content: "And here's some amazing content. It's very engaging. Right?"
   });
 
     //АКТИВНЫЕ ВКЛАДКИ

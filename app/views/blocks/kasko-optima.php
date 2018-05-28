@@ -33,7 +33,6 @@
           <li>повреждения автомобиля животными, насекомыми.</li>
         </ul>
       </div><!--modal-body-->
-<!--      <div class="modal-footer"><button class="button" id="optima">Click</button></div>-->
     </div>
   </div>
 </div>

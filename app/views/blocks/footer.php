@@ -37,6 +37,60 @@
           ?>
         </nav>
       </div>
+
+      <div class="col mt-3">
+        <div class="float-right">
+          <div class="counter mb-3">
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript" >
+              (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                  try {
+                    w.yaCounter49037786 = new Ya.Metrika({
+                      id:49037786,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true
+                    });
+                  } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                  d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+              })(document, window, "yandex_metrika_callbacks");
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/49037786" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+          </div>
+
+
+          <div class="counter">
+            <!-- HotLog -->
+            <span id="hotlog_counter"></span>
+            <span id="hotlog_dyn"></span>
+            <script type="text/javascript"> var hot_s = document.createElement('script');
+              hot_s.type = 'text/javascript'; hot_s.async = true;
+              hot_s.src = 'http://js.hotlog.ru/dcounter/2569467.js';
+              hot_d = document.getElementById('hotlog_dyn');
+              hot_d.appendChild(hot_s);
+            </script>
+            <noscript>
+              <a href="http://click.hotlog.ru/?2569467" target="_blank">
+                <img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569467&im=404" border="0"
+                     title="HotLog" alt="HotLog"></a>
+            </noscript>
+            <!-- /HotLog -->
+          </div>
+        </div>
+      </div>
     </div>
 
   </footer>

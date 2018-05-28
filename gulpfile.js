@@ -82,7 +82,8 @@ gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function () {
     var buildFiles = gulp.src([
         'web/*.php',
         'web/.htaccess',
-        'web/robots.txt'
+        'web/robots.txt',
+        'web/sitemap.xml'
     ]).pipe(gulp.dest('dist/web'));
 
 

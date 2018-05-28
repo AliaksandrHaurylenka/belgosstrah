@@ -1,0 +1,6 @@
+email: mail@strahovka-online.by
+pass: JEwHerpOzEimfi0
+
+База
+name: a0196439_strahovka
+pass: X1UAs5Fk
