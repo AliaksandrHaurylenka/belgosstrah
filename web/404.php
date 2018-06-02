@@ -53,8 +53,20 @@
     </style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <h1>Страница Не Найдена</h1>
+    <p>Извините, но страница, которую вы пытаетесь просмотреть, не существует.</p>
+    <p>Вы будете перенаправлены на <strong><a href="/">Главную страницу</a></strong> через: <b><span id="time"></span></b> сек.</p>
+    <script type="text/javascript">
+        var i = 5;//время в сек.
+        function time(){
+            document.getElementById("time").innerHTML = i;//визуальный счетчик
+            i--;//уменьшение счетчика
+            if (i < 0) location.href = "http://strahovka-online.by";//редирект
+        }
+        time();
+        setInterval(time, 1000);
+    </script>
+
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->

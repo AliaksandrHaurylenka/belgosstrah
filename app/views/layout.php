@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title><?= $this->e($title) ?></title>
   <meta name="description" content="<?= $this->e($description) ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="yandex-verification" content="59cc2e9d53729d9f" />
+  <meta name="yandex-verification" content="a84d0e3e07596769" />
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
   <link href='https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/libs.css">
@@ -30,6 +31,6 @@
 <!-- Обратная связь -->
 <script src="feedback/vendors/jgrowl/jquery.jgrowl.min.js"></script>
 <script src="feedback/js/main.js"></script>
-<script src="js/config.js"></script>
+<script src="js/config.min.js"></script>
 </body>
 </html>

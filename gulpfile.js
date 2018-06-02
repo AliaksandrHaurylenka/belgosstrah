@@ -22,6 +22,8 @@ gulp.task('config-js', function () {
     return gulp.src([
         'web/js/config.js'
     ])
+        .pipe(concat('config.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('web/js'));
 });
 
@@ -105,7 +107,7 @@ gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function () {
 
     var buildJs = gulp.src([
         'web/js/scripts.min.js',
-        'web/js/config.js',
+        'web/js/config.min.js',
         'web/js/tether.min.js'
     ]).pipe(gulp.dest('dist/web/js'));
 
