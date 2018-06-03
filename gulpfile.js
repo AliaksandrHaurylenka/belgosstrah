@@ -56,7 +56,7 @@ gulp.task('scss', function () {
     ])
         .pipe(scss())
         .pipe(autoprefixer(['last 15 versions'], {cascade: true}))
-        //.pipe(cleanCSS()) // Опционально, закомментировать при отладке
+        .pipe(cleanCSS()) // Опционально, закомментировать при отладке
         .pipe(gulp.dest('web/css'))
         .pipe(browserSync.reload({stream: true}));
 });
@@ -78,7 +78,7 @@ gulp.task('imagemin', function () {
 gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function () {
 
     var build = gulp.src([
-        '.htaccess',
+        '.htaccess'
     ]).pipe(gulp.dest('dist'));
 
     var buildFiles = gulp.src([
