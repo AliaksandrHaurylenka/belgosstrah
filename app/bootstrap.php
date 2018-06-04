@@ -60,7 +60,7 @@ $uri=rawurldecode($uri);
 $routeInfo=$dispatcher->dispatch($httpMethod, $uri);
 switch($routeInfo[0]){
   case FastRoute\Dispatcher::NOT_FOUND:
-    //dd("404 Not Found");
+    header('HTTP/1.1 404 Not Found', true, 404);
     include "404.php";
     break;
   case FastRoute\Dispatcher::METHOD_NOT_ALLOWED:
