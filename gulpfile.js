@@ -30,6 +30,7 @@ gulp.task('config-js', function () {
 gulp.task('js', ['config-js'], function () {
     return gulp.src([
         'web/libs/jquery/dist/jquery.min.js',
+        'web/libs/scrollup-master/dist/jquery.scrollUp.min.js',
         'web/libs/bootstrap/bootstrap.js'
     ])
         .pipe(sourcemaps.init()) //Инициализируем sourcemap
