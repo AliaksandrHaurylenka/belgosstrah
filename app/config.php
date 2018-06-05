@@ -23,6 +23,11 @@ return [
       /*"database_name" =>  "a0196439_test",
       "username"  =>  "a0196439_test",
       "password"  =>  "4S4jwgtS",*/
+
+      //Sprinthost
+      /*"database_name" =>  "a0196439_strahovka",
+      "username"  =>  "a0196439_strahovka",
+      "password"  =>  "X1UAs5Fk",*/
     ],
     'uploadsFolder' =>  'uploads/'
 ];

@@ -33,10 +33,10 @@ gulp.task('js', ['config-js'], function () {
         'web/libs/scrollup-master/dist/jquery.scrollUp.min.js',
         'web/libs/bootstrap/bootstrap.js'
     ])
-        .pipe(sourcemaps.init()) //Инициализируем sourcemap
+        // .pipe(sourcemaps.init()) //Инициализируем sourcemap
         .pipe(concat('scripts.min.js'))
         .pipe(uglify()) // Минимизировать весь js (на выбор)
-        .pipe(sourcemaps.write()) //Пропишем карты
+        // .pipe(sourcemaps.write()) //Пропишем карты
         .pipe(gulp.dest('web/js'))
         .pipe(browserSync.reload({stream: true}));
 });
@@ -86,7 +86,8 @@ gulp.task('build', ['removedist', 'imagemin', 'scss', 'js'], function () {
         'web/*.php',
         'web/.htaccess',
         'web/robots.txt',
-        'web/sitemap.xml'
+        'web/sitemap.xml',
+        'web/favicon.ico'
     ]).pipe(gulp.dest('dist/web'));
 
 
