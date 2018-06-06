@@ -47,18 +47,10 @@ $(function(){
     });
 
     //АКТИВНАЯ ВКЛАДКА "ИСТОРИЯ"
-    var pagePathname = window.location.pathname;
-    $('.navbar-nav li .nav-link').removeClass('active');
-    $('.navbar-nav .nav-link').each(function(){
-        // var belrosstrah = '/belrosstrah=avtokasko';
-        var reg = /[a-z]/i;
-        var belrosstrah = '/belrosstrah' +  window.location.search;
-        // alert(belrosstrah);
-
-
-        if ((pagePathname ==  belrosstrah)){
-            $('.navbar-nav li a[href="/belrosstrah"]').addClass('active');
-        }
+    var b = document.location.pathname;
+    var bro = b.substr(1);
+    $('li.dropdown a.dropdown-toggle').each(function(){
+        if ($(this).attr('href')==bro) $(this).parents('div.dropdown-menu').addClass('active');
     });
 
 
