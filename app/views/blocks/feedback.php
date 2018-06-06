@@ -1,5 +1,5 @@
 <?php
-//Тестирование - добавление случайной строки в сообщение
+/*//Тестирование - добавление случайной строки в сообщение
 function generatePassword($length=20)
 {
   $chars='abdefhiknrstyzABDEFGHKNQRSTYZ23456789';
@@ -9,7 +9,7 @@ function generatePassword($length=20)
     $string.=substr($chars, rand(1, $numChars)-1, 1);
   }
   return $string;
-}
+}*/
 
 ?>
 <!-- Модальное окно "ОБРАТНАЯ СВЯЗЬ" -->

@@ -1,4 +1,4 @@
-<table style="background-color: #f1f1f1; width:100%; align="
+﻿<table style="background-color: #f1f1f1; width:100%; align="
        center" width="100%" border="0" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
@@ -28,7 +28,7 @@
             </tr>
             <tr>
                 <td bgcolor="#fff" style="padding: 20px 15px; color: #777; font-size: 14px;">
-                    <p>&copy; Спорт-Костюковка</p>
+                    <p>&copy; Страховка online</p>
                 </td>
             </tr>
             </tbody>

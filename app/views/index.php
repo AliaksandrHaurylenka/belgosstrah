@@ -5,7 +5,7 @@
     ])
 ?>
 
-<? $this->insert('blocks/feedback'); ?>
+<?// $this->insert('blocks/feedback'); ?>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
