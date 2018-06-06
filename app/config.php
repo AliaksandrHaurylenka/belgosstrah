@@ -1,5 +1,6 @@
 <?php
 return [
+    "logo" => "Страховка online",
     "views_path"    =>  "../app/views/",
     "mail"  =>  [
         "smtp"  =>  "smtp.gmail.com",

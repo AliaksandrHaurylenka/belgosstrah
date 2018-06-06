@@ -55,8 +55,16 @@
   }
 }
 
-//@media (min-width: 768px) {
-//  .navbar-toggleable-md .navbar-toggler {
-//    display: none;
-//  }
-//}
+/*@media only screen and (min-width: 768px) {
+  .navbar-toggleable-md .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-toggleable-md .navbar-collapse {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    width: 100%;
+  }
+}*/
