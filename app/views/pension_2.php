@@ -63,7 +63,7 @@
     <p>В случае смерти Застрахованного лица в течение срока действия договора страхования наследникам выплачивается фактически накопленная сумма страховых взносов с учетом гарантированной доходности.</p>
 
     <div class="">
-      <button class="button" data-toggle="modal" data-target="#modal_feedback">Застраховаться</button>
+      <button class="button" data-toggle="modal" data-target="#modal_stravita">Застраховаться</button>
     </div>
 
     <?php $this->insert('blocks/form-stravita'); ?>

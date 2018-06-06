@@ -1,6 +1,6 @@
 <!-- Модальное окно "ОБРАТНАЯ СВЯЗЬ" -->
 <!--noindex-->
-<div class="modal fade" id="modal_feedback" tabindex="-1" role="dialog">
+<div class="modal fade" id="modal_stravita" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">

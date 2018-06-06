@@ -24,36 +24,24 @@ $(function(){
   $('.calc').popover({
     placement: 'left',
     trigger: trig,
-    title: 'Страховой калькулятор',
-    // content: "Рассчитать стоимость страховых услуг."
+    title: 'Страховой калькулятор'
   });
 
   $('.feedback').popover({
     placement: 'right',
     trigger: trig,
-    title: 'Обратная связь',
-    // content: "And here's some amazing content. It's very engaging. Right?"
+    title: 'Обратная связь'
   });
 
     //АКТИВНЫЕ ВКЛАДКИ
     var pageHref = window.location.pathname;
     $('.navbar-nav li a, .nav.flex-column a').removeClass('active');
-    $('.navbar-nav a, .nav.flex-column a').each(function(){ // для каждой ссылки
+    $('.navbar-nav .dropdown-menu a, .nav.flex-column a').each(function(){ // для каждой ссылки
         var linkHref = $(this).attr('href');//получаем href
         if (linkHref == pageHref){//сравниваем полученное из адресной строки с href ссылки
             // при совпадении присваиваем класс - какому элементу хотите?????
-            $(this).closest('.navbar-nav li a, .nav.flex-column a, .navbar-nav li > a').addClass('active');
-        }
-    });
-
-    //АКТИВНАЯ ВКЛАДКА "ИСТОРИЯ"
-    var b = document.location.pathname;
-    // alert(b);
-    // var bro = b.substr(1, 3);
-    // alert(bro);
-    $('.dropdown-menu a').each(function(){
-        if ($(this).attr('href') == b){
-          $(this).closest('.navbar-nav li > a.nav-link').addClass('active');
+            $(this).closest('.navbar-nav li a, .nav.flex-column a').addClass('active');
+            $(this).parents('.dropdown-menu').prev('.nav-link').css('color', 'rgba(255, 255, 255, 1)');
         }
     });
 

@@ -7,7 +7,7 @@
 </nav>
 
 <!--Меню менее 992 px-->
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary hidden-lg-up">
+<nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top bg-primary hidden-lg-up">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
           data-target="#navbarSmall" aria-controls="navbarCollapse" aria-expanded="false"
           aria-label="Toggle navigation">

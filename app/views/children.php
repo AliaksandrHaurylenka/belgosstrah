@@ -80,7 +80,7 @@
     <p>Одновременно ребенок получает страховую защиту на весь период накопления: в случае установления инвалидности или причинения вреда здоровью ребенка в течение срока действия договора производится выплата страхового обеспечения по дополнительным страховым случаям. </p>
 
     <div class="">
-      <button class="button" data-toggle="modal" data-target="#modal_feedback">Застраховаться</button>
+      <button class="button" data-toggle="modal" data-target="#modal_stravita">Застраховаться</button>
     </div>
 
     <?php $this->insert('blocks/form-stravita'); ?>

@@ -24,7 +24,12 @@
   <? endforeach; ?>
 </ul>
 
-<div class="contact my-2">
+<div class="contact my-2 hidden-md-down">
   <p class="d-inline mr-sm-4">Тел: +375(29)835-15-16</p>
-  <p class="d-inline my-2 mr-3">E-mail: tasha_rub@mail.ru</p>
+  <p class="d-inline my-2 mr-3 mail" data-toggle="modal" data-target="#modal_feedback">E-mail: tasha_rub@mail.ru</p>
+</div>
+
+<div class="contact my-2 hidden-lg-up">
+  <p class="d-inline mr-sm-4">+375(29)835-15-16</p>
+  <p class="d-inline my-2 mr-3 mail" data-toggle="modal" data-target="#modal_feedback">tasha_rub@mail.ru</p>
 </div>

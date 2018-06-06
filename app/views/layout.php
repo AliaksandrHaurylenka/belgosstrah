@@ -19,6 +19,8 @@
 
 <div class="wrap">
   <div class="content">
+<!--    --><?php //$this->insert('blocks/feedback'); ?>
+<!--    --><?php //$this->insert('blocks/form-stravita'); ?>
     <? $this->insert('blocks/nav-carousel'); ?>
 
     <?= $this->section('content') ?>

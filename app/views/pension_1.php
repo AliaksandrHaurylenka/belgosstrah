@@ -67,7 +67,7 @@
     <p>В случае ухода из жизни, наследники получают страховую выплату по «смерти» и «Стравита» производит возврат накопленной суммы.</p>
 
     <div class="">
-      <button class="button" data-toggle="modal" data-target="#modal_feedback">Застраховаться</button>
+      <button class="button" data-toggle="modal" data-target="#modal_stravita">Застраховаться</button>
     </div>
 
     <?php $this->insert('blocks/form-stravita'); ?>
