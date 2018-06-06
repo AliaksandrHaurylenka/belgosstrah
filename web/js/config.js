@@ -42,15 +42,19 @@ $(function(){
         var linkHref = $(this).attr('href');//получаем href
         if (linkHref == pageHref){//сравниваем полученное из адресной строки с href ссылки
             // при совпадении присваиваем класс - какому элементу хотите?????
-            $(this).closest('.navbar-nav li a, .nav.flex-column a').addClass('active');
+            $(this).closest('.navbar-nav li a, .nav.flex-column a, .navbar-nav li > a').addClass('active');
         }
     });
 
     //АКТИВНАЯ ВКЛАДКА "ИСТОРИЯ"
     var b = document.location.pathname;
-    var bro = b.substr(1);
-    $('li.dropdown a.dropdown-toggle').each(function(){
-        if ($(this).attr('href')==bro) $(this).parents('div.dropdown-menu').addClass('active');
+    // alert(b);
+    // var bro = b.substr(1, 3);
+    // alert(bro);
+    $('.dropdown-menu a').each(function(){
+        if ($(this).attr('href') == b){
+          $(this).closest('.navbar-nav li > a.nav-link').addClass('active');
+        }
     });
 
 
