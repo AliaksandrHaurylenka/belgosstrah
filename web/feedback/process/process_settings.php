@@ -34,7 +34,7 @@ define('MAIL_SUBJECT', 'Сообщение с сайта Страховка onli
 
 // кому необходимо отправить письмо
 //const MAIL_ADDRESS = 'aliaksandr.haurylenka@gmail.com';
-$bcc = ['aliaksandr.haurylenka@gmail.com', 'tasha_rub@mail.ru'];// для массовой рассылки
+$bcc = ['aliaksandr.haurylenka@gmail.com'];// для массовой рассылки
 
 // настройки mail для информирования пользователя о доставке сообщения
 //const MAIL_SUBJECT_CLIENT = 'Ваше сообщение доставлено';

@@ -57,7 +57,7 @@
                       <label for="room" class="control-label">Количество комнат, если дом - этажей</label>
                       <input id="room" type="text" name="room" required="required"
                              class="form-control"
-                             minlength="2"
+                             minlength="1"
                              value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
@@ -108,8 +108,7 @@
                   <label for="message_p" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
                   <textarea id="message_p" name="message" class="form-control"
                             rows="5" minlength="10"
-                            maxlength="500">
-                  </textarea>
+                            maxlength="500"></textarea>
                 </div>
 
                 <!-- Капча -->

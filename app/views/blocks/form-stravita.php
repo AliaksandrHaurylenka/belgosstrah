@@ -24,7 +24,9 @@
                     <div class="form-group has-feedback">
                       <label for="name_s" class="control-label">Ф.И.О.</label>
                       <input id="name_s" type="text" name="name" class="form-control"
-                             value="" minlength="2" required="required">
+                             value="Александр"
+                             minlength="2"
+                             required="required">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -34,7 +36,7 @@
                       <label for="age_s" class="control-label">Возраст</label>
                       <input id="age_s" type="text" name="age" required="required"
                              class="form-control"
-                             value="">
+                             value="39">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -56,10 +58,13 @@
                     <!-- Работа -->
                     <div class="form-group has-feedback">
                       <label for="work" class="control-label">Кем и где работаете</label>
-                      <input id="work" type="text" name="work" required="required"
+                      <input id="work"
+                             type="text"
+                             name="work"
+                             required="required"
                              class="form-control"
                              minlength="2"
-                             value="">
+                             value="Начальник">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -70,10 +75,13 @@
                     <!-- Спортивные интересы -->
                     <div class="form-group has-feedback">
                       <label for="sport_s" class="control-label">Занимаетелись спортом? Если да, то каким?</label>
-                      <input id="sport_s" type="text" name="sport" required="required"
+                      <input id="sport_s"
+                             type="text"
+                             name="sport"
+                             required="required"
                              class="form-control"
-                             minlength="4"
-                             value="">
+                             minlength="2"
+                             value="да">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -98,9 +106,12 @@
                     <!-- Сумма страхования -->
                     <div class="form-group has-feedback">
                       <label for="sum_s" class="control-label">Сумма страхования</label>
-                      <input id="sum_s" type="text" name="sum" required="required"
+                      <input id="sum_s"
+                             type="text"
+                             name="sum"
+                             required="required"
                              class="form-control"
-                             value="">
+                             value="50000">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -115,7 +126,7 @@
                              class="form-control"
                              placeholder="+375 (29) 123-45-67"
                              pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                             value="">
+                             value="+375 (29) 123-45-67">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -125,7 +136,7 @@
                       <label for="email_s" class="control-label">E-mail</label>
                       <input id="email_s" type="email" name="email"
                              class="form-control"
-                             value="">
+                             value="goric0312@mail.ru">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -136,8 +147,7 @@
                   <label for="message_s" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
                   <textarea id="message_s" name="message" class="form-control"
                             rows="5" minlength="10"
-                            maxlength="500">
-                  </textarea>
+                            maxlength="500"></textarea>
                 </div>
 
                 <!-- Капча -->

@@ -41,14 +41,14 @@ $work = filter_var($_POST['work'], FILTER_SANITIZE_STRING);
 
 
 // валидация формы
-function validate($input, $name, $min, $max, $nameInput){
+function validate($input, $text, $min, $max, $nameInput){
   if (isset($_POST[$input])) {
-    if (!checkTextLength($name, $min, $max)) { // проверка на количество символов в тексте
-      $data[$input] = 'Поле <b>' + $nameInput + '</b> содержит недопустимое количество символов';
+    if (!checkTextLength($text, $min, $max)) { // проверка на количество символов в тексте
+      $data[$input] = 'Поле <b>'.$nameInput.'</b> содержит недопустимое количество символов';
       $data['result'] = 'error';
     }
   } else {
-    $data[$input] = "Поле <b>" + $nameInput + "</b> не заполнено";
+    $data[$input] = "Поле <b>".$nameInput."</b> не заполнено";
     $data['result'] = 'error';
   }
   return $data;
@@ -61,7 +61,7 @@ function validate($input, $name, $min, $max, $nameInput){
 
 // валидация поля name
 if (isset($_POST['name'])) {
-  if (!checkTextLength($name, 2, 50)) {
+  if (!checkTextLength($name, 2, 100)) {
     $data['name'] = 'Поле <b>Имя</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }

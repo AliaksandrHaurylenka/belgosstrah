@@ -39,28 +39,12 @@ $price = filter_var($_POST['price'], FILTER_SANITIZE_STRING);
 $sum = filter_var($_POST['sum'], FILTER_SANITIZE_STRING); // защита от XSS
 
 
-// валидация формы
-function validate($input, $name, $min, $max, $nameInput){
-  if (isset($_POST[$input])) {
-    if (!checkTextLength($name, $min, $max)) { // проверка на количество символов в тексте
-      $data[$input] = 'Поле <b>' + $nameInput + '</b> содержит недопустимое количество символов';
-      $data['result'] = 'error';
-    }
-  } else {
-    $data[$input] = "Поле <b>" + $nameInput + "</b> не заполнено";
-    $data['result'] = 'error';
-  }
-  return $data;
-}
-
-//validate('name', $name, 2, 30, 'Имя');
-
 
 
 
 // валидация поля name
 if (isset($_POST['name'])) {
-  if (!checkTextLength($name, 2, 30)) {
+  if (!checkTextLength($name, 2, 100)) {
     $data['name'] = 'Поле <b>Имя</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }

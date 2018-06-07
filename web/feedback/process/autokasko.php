@@ -29,12 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
   exit();
 }
 
-// валидация формы
+$message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
 // валидация поля name
 if (isset($_POST['name'])) {
   $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING); // защита от XSS
-  if (!checkTextLength($name, 2, 50)) { // проверка на количество символов в тексте
+  if (!checkTextLength($name, 2, 100)) { // проверка на количество символов в тексте
     $data['name'] = 'Поле <b>Имя</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
