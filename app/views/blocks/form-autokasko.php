@@ -21,8 +21,8 @@
           <div class="col">
             <!-- Имя пользователя -->
             <div class="form-group has-feedback">
-              <label for="name" class="control-label">Ф.И.О.</label>
-              <input id="name" type="text" name="name" class="form-control"
+              <label for="name_a" class="control-label">Ф.И.О.</label>
+              <input id="name_a" type="text" name="name" class="form-control"
                      value="" minlength="2" required="required">
               <span class="glyphicon form-control-feedback"></span>
             </div>
@@ -57,8 +57,8 @@
           <div class="col-sm-6">
             <!-- Возраст водителя -->
             <div class="form-group has-feedback">
-              <label for="age" class="control-label">Возраст водителя</label>
-              <input id="age" type="text" name="age" required="required"
+              <label for="age_a" class="control-label">Возраст водителя</label>
+              <input id="age_a" type="text" name="age" required="required"
                      class="form-control"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
@@ -79,8 +79,8 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group has-feedback">
-              <label for="type" class="control-label">Вид страховки</label>
-              <select id="type" class="form-control" name="type">
+              <label for="type_a" class="control-label">Вид страховки</label>
+              <select id="type_a" class="form-control" name="type">
                 <option>КАСКО-Оптима</option>
                 <option>Личная защита</option>
                 <option>КАСКО-Автопрофи</option>
@@ -91,8 +91,8 @@
           <div class="col-sm-6">
             <!-- Работа -->
             <div class="form-group has-feedback">
-              <label for="sum" class="control-label">Сумма страхования (стоимость авто)</label>
-              <input id="sum" type="text" name="sum" required="required"
+              <label for="sum_a" class="control-label">Сумма страхования (стоимость авто)</label>
+              <input id="sum_a" type="text" name="sum" required="required"
                      class="form-control"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
@@ -114,8 +114,8 @@
           <div class="col-sm-4">
             <!-- Мобильный телефон -->
             <div class="form-group has-feedback">
-              <label for="phone" class="control-label">Моб. телефон</label>
-              <input id="phone" type="tel" name="phone" required="required"
+              <label for="phone_a" class="control-label">Моб. телефон</label>
+              <input id="phone_a" type="tel" name="phone" required="required"
                      class="form-control"
                      placeholder="+375 (29) 123-45-67"
                      pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
@@ -126,8 +126,8 @@
           <div class="col-sm-4">
             <!-- E-mail -->
             <div class="form-group has-feedback">
-              <label for="email" class="control-label">E-mail</label>
-              <input id="email" type="email" name="email"
+              <label for="email_a" class="control-label">E-mail</label>
+              <input id="email_a" type="email" name="email"
                      class="form-control"
                      value="">
               <span class="glyphicon form-control-feedback"></span>
@@ -137,8 +137,8 @@
 
         <!-- Сообщение пользователя -->
         <div class="form-group has-feedback">
-          <label for="message" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
-          <textarea id="message" name="message" class="form-control"
+          <label for="message_a" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
+          <textarea id="message_a" name="message" class="form-control"
                     rows="5" minlength="10"
                     maxlength="500"></textarea>
         </div>
@@ -151,8 +151,8 @@
             <span>* Нажмите на картинку, чтобы обновить.</span>
           </div>
           <div class="form-group has-feedback">
-            <label for="captcha" class="control-label">Код с картинки</label>
-            <input type="text" name="captcha" maxlength="6" required="required" id="captcha"
+            <label for="captcha_a" class="control-label">Код с картинки</label>
+            <input type="text" name="captcha" maxlength="6" required="required" id="captcha_a"
                    class="form-control captcha" placeholder="*******" autocomplete="off" value="">
             <span class="glyphicon form-control-feedback"></span>
           </div>

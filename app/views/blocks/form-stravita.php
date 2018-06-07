@@ -22,8 +22,8 @@
                   <div class="col-sm-6">
                     <!-- Имя пользователя -->
                     <div class="form-group has-feedback">
-                      <label for="name" class="control-label">Ф.И.О.</label>
-                      <input id="name" type="text" name="name" class="form-control"
+                      <label for="name_s" class="control-label">Ф.И.О.</label>
+                      <input id="name_s" type="text" name="name" class="form-control"
                              value="" minlength="2" required="required">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
@@ -31,8 +31,8 @@
                   <div class="col-sm-6">
                     <!-- Возраст -->
                     <div class="form-group has-feedback">
-                      <label for="age" class="control-label">Возраст</label>
-                      <input id="age" type="text" name="age" required="required"
+                      <label for="age_s" class="control-label">Возраст</label>
+                      <input id="age_s" type="text" name="age" required="required"
                              class="form-control"
                              value="">
                       <span class="glyphicon form-control-feedback"></span>
@@ -69,8 +69,8 @@
                   <div class="col">
                     <!-- Спортивные интересы -->
                     <div class="form-group has-feedback">
-                      <label for="sport" class="control-label">Занимаетелись спортом? Если да, то каким?</label>
-                      <input id="sport" type="text" name="sport" required="required"
+                      <label for="sport_s" class="control-label">Занимаетелись спортом? Если да, то каким?</label>
+                      <input id="sport_s" type="text" name="sport" required="required"
                              class="form-control"
                              minlength="4"
                              value="">
@@ -82,8 +82,8 @@
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group has-feedback">
-                      <label for="type" class="control-label">Вид страхования</label>
-                      <select class="form-control" id="type" name="type">
+                      <label for="type_s" class="control-label">Вид страхования</label>
+                      <select class="form-control" id="type_s" name="type">
                         <option>Страхование детей</option>
                         <option>Страхование жизни</option>
                         <option>Защищенный кредит</option>
@@ -97,8 +97,8 @@
                   <div class="col-sm-6">
                     <!-- Сумма страхования -->
                     <div class="form-group has-feedback">
-                      <label for="sum" class="control-label">Сумма страхования</label>
-                      <input id="sum" type="text" name="sum" required="required"
+                      <label for="sum_s" class="control-label">Сумма страхования</label>
+                      <input id="sum_s" type="text" name="sum" required="required"
                              class="form-control"
                              value="">
                       <span class="glyphicon form-control-feedback"></span>
@@ -110,8 +110,8 @@
                   <div class="col-sm-6">
                     <!-- Мобильный телефон -->
                     <div class="form-group has-feedback">
-                      <label for="phone" class="control-label">Моб. телефон</label>
-                      <input id="phone" type="tel" name="phone" required="required"
+                      <label for="phone_s" class="control-label">Моб. телефон</label>
+                      <input id="phone_s" type="tel" name="phone" required="required"
                              class="form-control"
                              placeholder="+375 (29) 123-45-67"
                              pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
@@ -122,8 +122,8 @@
                   <div class="col-sm-6">
                     <!-- E-mail -->
                     <div class="form-group has-feedback">
-                      <label for="email" class="control-label">E-mail</label>
-                      <input id="email" type="email" name="email"
+                      <label for="email_s" class="control-label">E-mail</label>
+                      <input id="email_s" type="email" name="email"
                              class="form-control"
                              value="">
                       <span class="glyphicon form-control-feedback"></span>
@@ -133,8 +133,8 @@
 
                 <!-- Сообщение пользователя -->
                 <div class="form-group has-feedback">
-                  <label for="message" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
-                  <textarea id="message" name="message" class="form-control"
+                  <label for="message_s" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
+                  <textarea id="message_s" name="message" class="form-control"
                             rows="5" minlength="10"
                             maxlength="500">
                   </textarea>
@@ -148,8 +148,8 @@
                     <span>* Нажмите на картинку, чтобы обновить.</span>
                   </div>
                   <div class="form-group has-feedback">
-                    <label for="captcha" class="control-label">Код с картинки</label>
-                    <input type="text" name="captcha" maxlength="6" required="required" id="captcha"
+                    <label for="captcha_s" class="control-label">Код с картинки</label>
+                    <input type="text" name="captcha" maxlength="6" required="required" id="captcha_s"
                            class="form-control captcha" placeholder="*******" autocomplete="off" value="">
                     <span class="glyphicon form-control-feedback"></span>
                   </div>

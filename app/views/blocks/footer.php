@@ -48,7 +48,7 @@
             <!-- /Yandex.Metrika informer -->
 
             <!-- Yandex.Metrika counter -->
-            <script type="text/javascript" >
+            <script>
                 (function (d, w, c) {
                     (w[c] = w[c] || []).push(function() {
                         try {
@@ -82,7 +82,7 @@
             <!-- HotLog -->
             <span id="hotlog_counter"></span>
             <span id="hotlog_dyn"></span>
-            <script type="text/javascript"> var hot_s = document.createElement('script');
+            <script> var hot_s = document.createElement('script');
               hot_s.type = 'text/javascript'; hot_s.async = true;
               hot_s.src = 'http://js.hotlog.ru/dcounter/2569467.js';
               hot_d = document.getElementById('hotlog_dyn');
@@ -90,7 +90,7 @@
             </script>
             <noscript>
               <a href="http://click.hotlog.ru/?2569467" target="_blank">
-                <img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569467&im=404" border="0"
+                <img src="http://hit20.hotlog.ru/cgi-bin/hotlog/count?s=2569467&im=404"
                      title="HotLog" alt="HotLog"></a>
             </noscript>
             <!-- /HotLog -->
