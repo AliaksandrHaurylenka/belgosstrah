@@ -19,9 +19,16 @@
 
 <div class="wrap">
   <div class="content">
+
+    <!--Модальные окна форм-->
     <?php $this->insert('blocks/feedback'); ?>
     <?php $this->insert('blocks/form-stravita'); ?>
-<!--    --><?php //$this->insert('blocks/feedback'); ?>
+    <?php $this->insert('blocks/form-autokasko'); ?>
+    <?php $this->insert('blocks/form-property'); ?>
+    <?php $this->insert('blocks/form-tourism'); ?>
+    <!--================-->
+
+
     <? $this->insert('blocks/nav-carousel'); ?>
 
     <?= $this->section('content') ?>

@@ -58,10 +58,8 @@
     </div>
 
     <div class="d-flex justify-content-center">
-      <button class="button" data-toggle="modal" data-target="#modal">Застраховать</button>
+      <button class="button" data-toggle="modal" data-target="#modalAutokasko">Застраховать</button>
     </div>
-    <?php $this->insert('blocks/form-autokasko'); ?>
-
   </section>
 
 

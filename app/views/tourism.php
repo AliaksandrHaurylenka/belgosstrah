@@ -47,10 +47,8 @@
     </div>
 
     <div class="d-flex align-items-center justify-content-center">
-      <button class="button" data-toggle="modal" data-target="#modal">Застраховаться</button>
+      <button class="button" data-toggle="modal" data-target="#modalTourism">Застраховаться</button>
     </div>
-    <?php $this->insert('blocks/form-tourism'); ?>
-
 
   </section>
 

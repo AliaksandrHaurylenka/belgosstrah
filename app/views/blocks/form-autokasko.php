@@ -1,7 +1,7 @@
 <!--НАЧАЛО ФОРМЫ-->
 <!-- https://itchief.ru/lessons/php/feedback-form-for-website -->
 <!--noindex-->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+<div class="modal fade" id="modalAutokasko" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -16,7 +16,7 @@
     <div class="panel-body">
 
       <!-- Форма обратной связи -->
-      <form id="feedbackForm" action="/feedback/process/autokasko.php" enctype="multipart/form-data" novalidate>
+      <form id="feedbackAutokasko" action="/feedback/process/autokasko.php" enctype="multipart/form-data" novalidate>
         <div class="row">
           <div class="col">
             <!-- Имя пользователя -->

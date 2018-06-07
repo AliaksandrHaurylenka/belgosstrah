@@ -1,6 +1,6 @@
 <!-- Модальное окно "ОБРАТНАЯ СВЯЗЬ" -->
 <!--noindex-->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+<div class="modal fade" id="modalProperty" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -17,7 +17,7 @@
             <div class="panel-body">
 
               <!-- Форма обратной связи -->
-              <form id="feedbackForm" action="/feedback/process/property.php" enctype="multipart/form-data" novalidate>
+              <form id="feedbackProperty" action="/feedback/process/property.php" enctype="multipart/form-data" novalidate>
                 <div class="row">
                   <div class="col-sm-6">
                     <!-- Имя пользователя -->

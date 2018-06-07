@@ -41,10 +41,8 @@
     <p>Наличие у вас страховки ЗАО «СК <strong>«Белросстрах»</strong> — это ваше спокойствие в настоящем и будущем.</p>
 
     <div class="">
-      <button class="button" data-toggle="modal" data-target="#modal">Застраховать</button>
+      <button class="button" data-toggle="modal" data-target="#modalProperty">Застраховать</button>
     </div>
-
-    <?php $this->insert('blocks/form-property'); ?>
 
   </section>
 
