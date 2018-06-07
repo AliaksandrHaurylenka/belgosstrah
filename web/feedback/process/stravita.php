@@ -61,7 +61,7 @@ function validate($input, $name, $min, $max, $nameInput){
 
 // валидация поля name
 if (isset($_POST['name'])) {
-  if (!checkTextLength($name, 2, 30)) {
+  if (!checkTextLength($name, 2, 50)) {
     $data['name'] = 'Поле <b>Имя</b> содержит недопустимое количество символов';
     $data['result'] = 'error';
   }
