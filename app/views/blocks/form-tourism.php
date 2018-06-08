@@ -22,7 +22,7 @@
               <label for="name_t" class="control-label">Ф.И.О. (старше 14 лет)</label>
               <input id="name_t" type="text" name="name" class="form-control"
                      value="" minlength="2" required="required">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
           <div class="col-sm-6">
@@ -32,7 +32,7 @@
               <input id="number" type="text" name="number" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@
               <input id="children" type="text" name="children" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
           <div class="col-sm-6">
@@ -55,7 +55,7 @@
               <input id="city" type="text" name="city" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@
               <label for="date1" class="control-label">Дата отъезда</label>
               <input id="date1" type="date" name="date1" required="required"
                      class="form-control">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
 
@@ -77,7 +77,7 @@
               <label for="date2" class="control-label">Дата приезда</label>
               <input id="date2" type="date" name="date2" required="required"
                      class="form-control">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
               <input id="sport_t" type="text" name="sport" required
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
                 <option>Оптима</option>
                 <option>Престиж</option>
               </select>
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
 
@@ -114,7 +114,7 @@
               <input id="sum_t" type="text" name="sum" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
                      placeholder="+375 (29) 123-45-67"
                      pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
           <div class="col-sm-6">
@@ -139,7 +139,7 @@
               <input id="email_t" type="email" name="email"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -163,7 +163,7 @@
             <label for="captcha_t" class="control-label">Код с картинки</label>
             <input type="text" name="captcha" maxlength="6" required="required" id="captcha_t"
                    class="form-control captcha" placeholder="*******" autocomplete="off" value="">
-            <span class="glyphicon form-control-feedback"></span>
+
           </div>
         </div>
 

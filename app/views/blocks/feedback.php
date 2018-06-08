@@ -42,7 +42,6 @@ function generatePassword($length=20)
                       <label for="name" class="control-label">Имя</label>
                       <input id="name" type="text" name="name" class="form-control"
                              value="" minlength="2" required="required">
-                      <span class="glyphicon form-control-feedback"></span>
                     </div>
 
                   </div>
@@ -54,7 +53,6 @@ function generatePassword($length=20)
                       <input id="email" type="email" name="email" required="required"
                              class="form-control"
                              value="">
-                      <span class="glyphicon form-control-feedback"></span>
                     </div>
 
                   </div>
@@ -79,7 +77,6 @@ function generatePassword($length=20)
                     <label for="captcha" class="control-label">Код с картинки</label>
                     <input type="text" name="captcha" maxlength="6" required="required" id="captcha"
                            class="form-control captcha" placeholder="*******" autocomplete="off" value="">
-                    <span class="glyphicon form-control-feedback"></span>
                   </div>
                 </div>
 

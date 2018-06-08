@@ -108,23 +108,23 @@ $(function(){
   };
 
   // изменение состояния элемента формы (success, error, clear)
-  ProcessForm.prototype.changeStateInput=function(input, state){
-    input=$(input);
-    var inputGroup=input.parents('.form-group');
-    var glyphiconInput=inputGroup.find('.form-control-feedback');
-    if(state==='error'){
-      inputGroup.removeClass('has-success').addClass('has-error');
-      if(input.prop("tagName").toLowerCase()!=='textarea'){
-        glyphiconInput.removeClass('glyphicon-ok').addClass('glyphicon-remove');
+  ProcessForm.prototype.changeStateInput = function (input, state) {
+    input = $(input);
+    var inputGroup = input.parents('.form-group');
+    var glyphiconInput = inputGroup.find('.form-control');
+    if (state === 'error') {
+      inputGroup.removeClass('has-success').addClass('has-warning');
+      if (input.prop("tagName").toLowerCase() !== 'textarea') {
+        glyphiconInput.removeClass('form-control-success').addClass('form-control-warning');
       }
-    } else if(state==='success'){
-      inputGroup.removeClass('has-error').addClass('has-success');
-      if(input.prop("tagName").toLowerCase()!=='textarea'){
-        glyphiconInput.removeClass('glyphicon-remove').addClass('glyphicon-ok');
+    } else if (state === 'success') {
+      inputGroup.removeClass('has-warning').addClass('has-success');
+      if (input.prop("tagName").toLowerCase() !== 'textarea') {
+        glyphiconInput.removeClass('form-control-warning').addClass('form-control-success');
       }
-    } else{
-      inputGroup.removeClass('has-success has-error');
-      glyphiconInput.removeClass('glyphicon-ok glyphicon-remove');
+    } else {
+      inputGroup.removeClass('has-success has-warning');
+      glyphiconInput.removeClass('form-control-success form-control-warning');
     }
   };
 

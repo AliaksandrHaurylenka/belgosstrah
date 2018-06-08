@@ -227,3 +227,8 @@ if ($data['result'] == 'success') {
 
 // сообщаем результат клиенту
 echo json_encode($data);
+
+/*$page = $_SERVER['REQUEST_URI'];
+$sec = "2";
+header("Refresh: $sec; url=$page");*/
+//header('Location: '.$_SERVER['REQUEST_URI']);

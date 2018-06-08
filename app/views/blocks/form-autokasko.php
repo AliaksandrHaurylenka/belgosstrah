@@ -24,7 +24,6 @@
               <label for="name_a" class="control-label">Ф.И.О.</label>
               <input id="name_a" type="text" name="name" class="form-control"
                      value="" minlength="2" required="required">
-              <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
         </div>
@@ -37,7 +36,6 @@
               <input id="auto" type="text" name="auto" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
             </div>
           </div>
 
@@ -48,7 +46,7 @@
               <input id="year" type="text" name="year" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -61,7 +59,7 @@
               <input id="age_a" type="text" name="age" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
           <div class="col-sm-6">
@@ -71,7 +69,7 @@
               <input id="driving_experience" type="text" name="driving_experience" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -85,7 +83,7 @@
                 <option>Личная защита</option>
                 <option>КАСКО-Автопрофи</option>
               </select>
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
           <div class="col-sm-6">
@@ -95,7 +93,7 @@
               <input id="sum_a" type="text" name="sum" required="required"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -108,7 +106,7 @@
                 <option>Нет</option>
                 <option>Да</option>
               </select>
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
           <div class="col-sm-4">
@@ -120,7 +118,7 @@
                      placeholder="+375 (29) 123-45-67"
                      pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
           <div class="col-sm-4">
@@ -130,7 +128,7 @@
               <input id="email_a" type="email" name="email"
                      class="form-control"
                      value="">
-              <span class="glyphicon form-control-feedback"></span>
+
             </div>
           </div>
         </div>
@@ -154,7 +152,7 @@
             <label for="captcha_a" class="control-label">Код с картинки</label>
             <input type="text" name="captcha" maxlength="6" required="required" id="captcha_a"
                    class="form-control captcha" placeholder="*******" autocomplete="off" value="">
-            <span class="glyphicon form-control-feedback"></span>
+
           </div>
         </div>
 

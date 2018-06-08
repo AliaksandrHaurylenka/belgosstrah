@@ -25,7 +25,7 @@
                       <label for="name_p" class="control-label">Ф.И.О.</label>
                       <input id="name_p" type="text" name="name" class="form-control"
                              value="" minlength="2" required="required">
-                      <span class="glyphicon form-control-feedback"></span>
+
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -36,7 +36,7 @@
                         <option>Квартира</option>
                         <option>Дом</option>
                       </select>
-                      <span class="glyphicon form-control-feedback"></span>
+
                     </div>
                   </div>
                 </div>
@@ -48,7 +48,7 @@
                       <label for="price" class="control-label">Стоимость жилья</label>
                       <input id="price" type="text" name="price" class="form-control"
                              value="" minlength="2" required="required">
-                      <span class="glyphicon form-control-feedback"></span>
+
                     </div>
                   </div>
                   <div class="col-sm-6">
