@@ -147,7 +147,7 @@
         <!-- Сообщение пользователя -->
         <div class="form-group has-feedback">
           <label for="message_t" class="control-label">Дополнительные пожелания (не менее 10 символов)</label>
-          <textarea id="message_t" name="message_t" class="form-control"
+          <textarea id="message_t" name="message" class="form-control"
                     rows="5" minlength="10"
                     maxlength="500"></textarea>
         </div>

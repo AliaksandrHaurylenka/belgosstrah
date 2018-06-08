@@ -24,7 +24,7 @@
                     <div class="form-group has-feedback">
                       <label for="name_s" class="control-label">Ф.И.О.</label>
                       <input id="name_s" type="text" name="name" class="form-control"
-                             value="Александр"
+                             value=""
                              minlength="2"
                              required="required">
                       <span class="glyphicon form-control-feedback"></span>
@@ -36,7 +36,7 @@
                       <label for="age_s" class="control-label">Возраст</label>
                       <input id="age_s" type="text" name="age" required="required"
                              class="form-control"
-                             value="39">
+                             value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -64,7 +64,7 @@
                              required="required"
                              class="form-control"
                              minlength="2"
-                             value="Начальник">
+                             value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -81,7 +81,7 @@
                              required="required"
                              class="form-control"
                              minlength="2"
-                             value="да">
+                             value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -111,7 +111,7 @@
                              name="sum"
                              required="required"
                              class="form-control"
-                             value="50000">
+                             value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -126,7 +126,7 @@
                              class="form-control"
                              placeholder="+375 (29) 123-45-67"
                              pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                             value="+375 (29) 123-45-67">
+                             value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
@@ -136,7 +136,7 @@
                       <label for="email_s" class="control-label">E-mail</label>
                       <input id="email_s" type="email" name="email"
                              class="form-control"
-                             value="goric0312@mail.ru">
+                             value="">
                       <span class="glyphicon form-control-feedback"></span>
                     </div>
                   </div>
