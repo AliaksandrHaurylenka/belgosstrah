@@ -20,9 +20,16 @@ class Validate
     return $result;
   }
 
+  //фильтрация входящих данных
+  function filter($input){
+    $text = filter_var($_POST[$input], FILTER_SANITIZE_STRING); // защита от XSS
+    return $text;
+  }
+
   // валидация формы
   function val($input, $min, $max, $nameInput){
-    $text = filter_var($_POST[$input], FILTER_SANITIZE_STRING); // защита от XSS
+//    $text = filter_var($_POST[$input], FILTER_SANITIZE_STRING); // защита от XSS
+    $text = $this -> filter($input);
     $checkTextLength = $this -> checkTextLength($text, $min, $max);
     if (isset($_POST[$input])){
       if (!$checkTextLength) { // проверка на количество символов в тексте

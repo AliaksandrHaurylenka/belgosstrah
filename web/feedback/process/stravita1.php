@@ -19,17 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 
 include "Validate.php";
 
-$stravita = new Validate;
+$send = new Validate;
 
 //inputы формы для валидации
-$name = $stravita -> val('name', 2, 100, 'Имя');
-$age = $stravita -> val('age', 2, 20, 'Возраст');
-$work = $stravita -> val('work', 2, 100, 'Работа');
-$sport = $stravita -> val('sport', 2, 100, 'Спорт');
-$sum = $stravita -> val('sum', 4, 20, 'Сумма');
-$sum = $stravita -> val('sum', 4, 20, 'Сумма');
-$phone = $stravita -> val('phone', 4, 20, 'Мобильный телефон');
-$email = $stravita -> val('email', 4, 100, 'E-mail');
+$name = $send -> val('name', 2, 100, 'Имя');
+$age = $send -> val('age', 2, 20, 'Возраст');
+$work = $send -> val('work', 2, 100, 'Работа');
+$sport = $send -> val('sport', 2, 100, 'Спорт');
+$sum = $send -> val('sum', 4, 20, 'Сумма');
+$phone = $send -> val('phone', 4, 20, 'Мобильный телефон');
+$email = $send -> val('email', 4, 100, 'E-mail');
 
 
 

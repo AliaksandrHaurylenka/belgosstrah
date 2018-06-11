@@ -9,16 +9,6 @@ session_start();
 // переменная, хранящая основной статус обработки формы
 $data['result'] = 'success';
 
-// функция для проверки количество символов в тексте
-function checkTextLength($text, $minLength, $maxLength)
-{
-    $result = false;
-    $textLength = mb_strlen($text, 'UTF-8');
-    if (($textLength >= $minLength) && ($textLength <= $maxLength)) {
-        $result = true;
-    }
-    return $result;
-}
 
 // обрабатывать будем только ajax запросы
 if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) || $_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') {
@@ -30,43 +20,19 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 
 // валидация формы
+include "Validate.php";
 
-// валидация поля name
-if (isset($_POST['name'])) {
-    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING); // защита от XSS
-    if (!checkTextLength($name, 2, 100)) { // проверка на количество символов в тексте
-        $data['name'] = 'Поле <b>Имя</b> содержит недопустимое количество символов';
-        $data['result'] = 'error';
-    }
-} else {
-    $data['name'] = 'Поле <b>Имя</b> не заполнено';
-    $data['result'] = 'error';
-}
+$send = new Validate;
 
-//валидация поля email
-if (isset($_POST['email'])) {
-    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) { // защита от XSS
-        $data['email'] = 'Поле <b>Email</b> имеет не корректный адрес';
-        $data['result'] = 'error';
-    } else {
-        $email = $_POST['email'];
-    }
-} else {
-    $data['email'] = 'Поле <b>Email</b> не заполнено';
-    $data['result'] = 'error';
-}
+$name = $send ->filter('name');
+$email = $send ->filter('email');
+$message = $send ->filter('message');
 
-//валидация поля message
-if (isset($_POST['message'])) {
-    $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); // защита от XSS
-    if (!checkTextLength($message, 20, 500)) { // проверка на количество символов в тексте
-        $data['message'] = 'Поле <b>Сообщение</b> содержит недопустимое количество символов';
-        $data['result'] = 'error';
-    }
-} else {
-    $data['message'] = 'Поле <b>Сообщение</b> не заполнено';
-    $data['result'] = 'error';
-}
+//inputы формы для валидации
+$send -> val('name', 2, 100, 'Имя');
+$send -> val('message', 2, 500, 'Сообщение');
+$send -> val('email', 4, 100, 'E-mail');
+
 
 //валидация капчи
 if (isset($_POST['captcha']) && isset($_SESSION['captcha'])) {
