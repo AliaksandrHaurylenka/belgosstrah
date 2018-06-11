@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
   exit();
 }
 
-
+//=====================================================================================================================
 $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING); // защита от XSS
 $sport = filter_var($_POST['sport'], FILTER_SANITIZE_STRING);
 $type = filter_var($_POST['type'], FILTER_SANITIZE_STRING);
@@ -38,23 +38,6 @@ $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 $age = filter_var($_POST['age'], FILTER_SANITIZE_STRING);
 $sex = filter_var($_POST['sex'], FILTER_SANITIZE_STRING);
 $work = filter_var($_POST['work'], FILTER_SANITIZE_STRING);
-
-
-// валидация формы
-function validate($input, $text, $min, $max, $nameInput){
-  if (isset($_POST[$input])) {
-    if (!checkTextLength($text, $min, $max)) { // проверка на количество символов в тексте
-      $data[$input] = 'Поле <b>'.$nameInput.'</b> содержит недопустимое количество символов';
-      $data['result'] = 'error';
-    }
-  } else {
-    $data[$input] = "Поле <b>".$nameInput."</b> не заполнено";
-    $data['result'] = 'error';
-  }
-  return $data;
-}
-
-//validate('name', $name, 2, 30, 'Имя');
 
 
 
@@ -142,7 +125,7 @@ if (isset($_POST['email'])) {
   $data['email'] = 'Поле <b>Email</b> не заполнено';
   $data['result'] = 'error';
 }
-
+//===============================================================================================
 
 //валидация капчи
 if (isset($_POST['captcha']) && isset($_SESSION['captcha'])) {

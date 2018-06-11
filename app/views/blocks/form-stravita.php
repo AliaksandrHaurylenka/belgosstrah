@@ -17,7 +17,7 @@
             <div class="panel-body">
 
               <!-- Форма обратной связи -->
-              <form id="feedbackStravita" action="/feedback/process/stravita.php" enctype="multipart/form-data" novalidate>
+              <form id="feedbackStravita" action="/feedback/process/stravita1.php" enctype="multipart/form-data" novalidate>
                 <div class="row">
                   <div class="col-sm-6">
                     <!-- Имя пользователя -->

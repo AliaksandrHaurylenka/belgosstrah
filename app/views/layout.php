@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title><?= $this->e($title) ?></title>
   <meta name="description" content="<?= $this->e($description) ?>">
-  <meta name="keywords" content="Страховка online, Автокаско, Страхование имущества, Страхование туристов, Страхование здоровья, Страхование детей, Страхование пенсионеров, Стравита, Белросстрах">
+  <meta name="keywords" content="страховка, страховка online, страховка онлайн, автокаско, страхование имущества, страхование туристов, страхование здоровья, страхование детей, страхование пенсионеров, стравита, белросстрах">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="yandex-verification" content="59cc2e9d53729d9f" />
   <meta name="yandex-verification" content="a84d0e3e07596769" />
