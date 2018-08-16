@@ -17,8 +17,9 @@ $containerBuilder->addDefinitions(
     $database_name = config('database.database_name');
     $username = config('database.username');
     $password = config('database.password');
+    $charset = config('database.charset');
 
-    return new PDO("$driver:host=$host;dbname=$database_name", $username, $password);
+    return new PDO("$driver:host=$host;dbname=$database_name; charset=$charset", $username, $password);
   },
 
   \League\Plates\Engine::class=>function () {

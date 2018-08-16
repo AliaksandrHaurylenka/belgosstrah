@@ -43,7 +43,7 @@ gulp.task('js', ['config-js'], function () {
 
 gulp.task('browser-sync', function () {
     browserSync({
-        proxy: "belgosstrah",//надо менять в соответствии с сервером
+        proxy: "belgosstrah.test",//надо менять в соответствии с сервером
         /*server: {
          baseDir: 'app'
          },*/

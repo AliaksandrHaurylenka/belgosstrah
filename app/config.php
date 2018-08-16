@@ -15,6 +15,7 @@ return [
         "database_name" =>  "insurance",
         "username"  =>  "root",
         "password"  =>  "",
+        "charset" => "utf8mb4",
       //Ostinger
         /*"database_name" =>  "u473969940_test",
         "username"  =>  "u473969940_test",

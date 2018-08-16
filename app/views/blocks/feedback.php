@@ -41,7 +41,7 @@ function generatePassword($length=20)
                     <div class="form-group has-feedback">
                       <label for="name" class="control-label">Имя</label>
                       <input id="name" type="text" name="name" class="form-control"
-                             value="" minlength="2" required="required">
+                             value="" required="required">
                     </div>
 
                   </div>
